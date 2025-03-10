@@ -2,10 +2,12 @@
   "compilerOptions": {
     "target": "esnext",
     "lib": [
-      "esnext"
+      "esnext",
+      "dom",
+      "dom.iterable"
     ],
     "jsx": "preserve",
-    "baseUrl": ".",
+    "baseUrl": "./",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,8 +23,9 @@
     "paths": {}
   },
   "include": [
-    "./src/comp",
-    "./src/module.d.ts"
+    "./comp",
+    "./module.d.ts",
+    "./index.ts"
   ],
   "exclude": [
     "node_modules"

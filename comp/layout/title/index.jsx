@@ -1,0 +1,8 @@
+import React from "react";
+export default function ({ children, right }) {
+    return (<div className="flex w-full items-center mb-5 min-h-13">
+			<h4 className="block">{children}</h4>
+			<div className="grow flex justify-end">{right}</div>
+		</div>);
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanN4Iiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sS0FBa0IsTUFBTSxPQUFPLENBQUM7QUFPdkMsTUFBTSxDQUFDLE9BQU8sV0FBVyxFQUFDLFFBQVEsRUFBRSxLQUFLLEVBQVE7SUFDaEQsT0FBTyxDQUNOLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyx3Q0FBd0MsQ0FDdEQ7R0FBQSxDQUFDLEVBQUUsQ0FBQyxTQUFTLENBQUMsT0FBTyxDQUFDLENBQUMsUUFBUSxDQUFDLEVBQUUsRUFBRSxDQUNwQztHQUFBLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyx1QkFBdUIsQ0FBQyxDQUFDLEtBQUssQ0FBQyxFQUFFLEdBQUcsQ0FDcEQ7RUFBQSxFQUFFLEdBQUcsQ0FBQyxDQUNOLENBQUM7QUFDSCxDQUFDIn0=

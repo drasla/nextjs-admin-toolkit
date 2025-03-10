@@ -1,5 +1,0 @@
-import NX from "./nextjs";
-import TB from "./table";
-export * from "./types";
-export { TB, NX };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEVBQUUsTUFBTSxVQUFVLENBQUM7QUFDMUIsT0FBTyxFQUFFLE1BQU0sU0FBUyxDQUFDO0FBRXpCLGNBQWMsU0FBUyxDQUFDO0FBRXhCLE9BQU8sRUFBQyxFQUFFLEVBQUUsRUFBRSxFQUFDLENBQUMifQ==

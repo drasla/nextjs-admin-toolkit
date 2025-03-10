@@ -1,0 +1,14 @@
+.close {
+  border-radius: 15px;
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.close:hover {
+  background-color: var(--color-modal-close-button-hover);
+}
+
+.content {
+  background-color: var(--color-modal-content-background);
+  min-width: 20rem;
+}

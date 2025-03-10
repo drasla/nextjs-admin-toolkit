@@ -1,0 +1,10 @@
+import React from "react";
+import Modal from "../../modal/index";
+export default function ({ children, pending }) {
+    if (!pending)
+        return null;
+    return (<Modal.Backdrop open={true} onClose={() => { }} disableBackdrop disableEscapeKey>
+			{children || "로딩중"}
+		</Modal.Backdrop>);
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanN4Iiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sS0FBa0IsTUFBTSxPQUFPLENBQUM7QUFDdkMsT0FBTyxLQUFLLE1BQU0sbUJBQW1CLENBQUM7QUFPdEMsTUFBTSxDQUFDLE9BQU8sV0FBVyxFQUFDLFFBQVEsRUFBRSxPQUFPLEVBQVE7SUFDbEQsSUFBSSxDQUFDLE9BQU87UUFBRSxPQUFPLElBQUksQ0FBQztJQUUxQixPQUFPLENBQ04sQ0FBQyxLQUFLLENBQUMsUUFBUSxDQUNkLElBQUksQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUNYLE9BQU8sQ0FBQyxDQUFDLEdBQUcsRUFBRSxHQUFFLENBQUMsQ0FBQyxDQUNsQixlQUFlLENBQ2YsZ0JBQWdCLENBQ2hCO0dBQUEsQ0FBQyxRQUFRLElBQUksS0FBSyxDQUNuQjtFQUFBLEVBQUUsS0FBSyxDQUFDLFFBQVEsQ0FBQyxDQUNqQixDQUFDO0FBQ0gsQ0FBQyJ9

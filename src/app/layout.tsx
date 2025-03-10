@@ -1,5 +1,5 @@
-import {NX, PropsChildren} from "../comp";
+import {Layout, PropsChildren} from "index";
 
 export default async function ({children}: PropsChildren) {
-	return <NX.Root>{children}</NX.Root>;
+	return <Layout.HTML>{children}</Layout.HTML>;
 }

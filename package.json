@@ -5,19 +5,21 @@
     "export": "sh ./script/build.sh",
     "tag": "sh ./script/tag.sh $(cat ./version)"
   },
-  "main": "./src/comp/index.js",
-  "types": "./src/comp/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/d3v-friends/nextjs-admin-toolkit"
   },
   "dependencies": {
+    "luxon": "3.5.0",
     "next": "15.2.1",
-    "nextjs-tools": "github:d3v-friends/nextjs-tools#0.1.4",
+    "nextjs-tools": "github:d3v-friends/nextjs-tools#0.1.8",
     "react": "19.0.0",
     "react-dom": "19.0.0"
   },
   "devDependencies": {
+    "@types/luxon": "3.4.2",
     "@tailwindcss/postcss": "4.0.12",
     "@types/node": "20.17.24",
     "@types/react": "19.0.10",

@@ -1,0 +1,38 @@
+.item {
+  cursor: pointer;
+  border-radius: 0.5rem;
+
+  div {
+    color: var(--color-side-nav-font);
+  }
+}
+
+.item:hover {
+  background-color: var(--color-side-nav-hover);
+
+  div {
+    color: var(--color-side-nav-font-hover);
+    font-weight: 700;
+  }
+}
+
+.item.active {
+  background-color: var(--color-side-nav-active);
+
+  div {
+    color: var(--color-side-nav-font-active);
+    font-weight: 700;
+  }
+}
+
+.icon {
+  filter: var(--sise-nav-icon-filter)
+}
+
+.icon.active {
+  filter: var(--filter-side-nav-icon-active);
+}
+
+.title {
+  color: var(--color-side-nav-title);
+}
