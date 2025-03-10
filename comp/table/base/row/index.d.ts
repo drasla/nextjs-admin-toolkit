@@ -1,5 +1,5 @@
 import React from "react";
-import { TableItem } from "comp/table/types";
+import { TableItem } from "../../types";
 type Props<T> = {
     items: Pick<TableItem<T>, "name" | "className" | "parser">[];
     className?: string;

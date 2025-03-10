@@ -1,4 +1,4 @@
-import Header from "comp/table/base/header/index";
-import Row from "comp/table/base/row/index";
+import Header from "./header";
+import Row from "./row";
 export default { Header, Row };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLE1BQU0sTUFBTSw4QkFBOEIsQ0FBQztBQUNsRCxPQUFPLEdBQUcsTUFBTSwyQkFBMkIsQ0FBQztBQUU1QyxlQUFlLEVBQUMsTUFBTSxFQUFFLEdBQUcsRUFBQyxDQUFDIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLE1BQU0sTUFBTSxVQUFVLENBQUM7QUFDOUIsT0FBTyxHQUFHLE1BQU0sT0FBTyxDQUFDO0FBRXhCLGVBQWUsRUFBQyxNQUFNLEVBQUUsR0FBRyxFQUFDLENBQUMifQ==

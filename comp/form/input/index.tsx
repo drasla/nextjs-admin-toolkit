@@ -1,7 +1,7 @@
 "use client";
-import CSS from "comp/form/index.module.scss";
 import {fnCss, HTMLInputModeAttribute} from "nextjs-tools";
 import React, {HTMLInputAutoCompleteAttribute, HTMLInputTypeAttribute, ReactNode, useEffect, useState} from "react";
+import CSS from "../index.module.scss";
 
 type Props = {
 	label?: ReactNode;

@@ -1,4 +1,4 @@
-import Header from "comp/table/base/header/index";
-import Row from "comp/table/base/row/index";
+import Header from "./header";
+import Row from "./row";
 
 export default {Header, Row};
