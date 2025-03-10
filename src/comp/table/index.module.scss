@@ -1,3 +1,19 @@
-.table-top-border {
+.row.hover:hover {
+  background: var(--color-table-row-hover);
+}
 
+.table-top-border {
+  border-top: 1px solid var(--color-table-border);
+}
+
+.table-border-bottom {
+  border-bottom: 1px solid var(--color-table-border);
+}
+
+.table-header {
+  color: var(--color-table-header);
+}
+
+.table-row {
+  color: var(--color-table-row);
 }

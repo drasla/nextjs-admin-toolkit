@@ -1,3 +1,3 @@
-import Base from "./base";
+import Link from "./link";
 
-export default {Base};
+export default {Link};

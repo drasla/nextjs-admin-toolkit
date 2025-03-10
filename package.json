@@ -2,11 +2,11 @@
   "name": "nextjs-admin-toolkit",
   "scripts": {
     "dev": "source .env && PORT=$PORT NODE_OPTIONS='--inspect --enable-source-maps=true' next dev --turbopack",
-    "export": "rm -rf ./dist && tsc -p tsconfig.export.json && git add dist",
+    "export": "sh ./script/build.sh",
     "tag": "sh ./script/tag.sh $(cat ./version)"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "main": "./src/comp/index.js",
+  "types": "./src/comp/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/d3v-friends/nextjs-admin-toolkit"
@@ -18,13 +18,19 @@
     "react-dom": "19.0.0"
   },
   "devDependencies": {
-    "sass": "1.85.1",
     "@tailwindcss/postcss": "4.0.12",
     "@types/node": "20.17.24",
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "prettier": "3.5.3",
+    "sass": "1.85.1",
     "tailwindcss": "4.0.12",
     "typescript": "5.8.2"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "sharp"
+    ]
   }
 }

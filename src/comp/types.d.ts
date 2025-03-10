@@ -1,8 +1,5 @@
-import {ReactNode} from "react";
-
+import { ReactNode } from "react";
 export type PropsChildren = Readonly<{
-	children: ReactNode;
+    children: ReactNode;
 }>;
-
-// css
 export type AlignJustifyCSS = "justify-center" | "justify-start" | "justify-end";

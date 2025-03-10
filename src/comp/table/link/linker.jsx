@@ -1,0 +1,6 @@
+"use client";
+import Link from "next/link";
+export default function ({ children, href }) {
+    return <Link {...{ href }}>{children}</Link>;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGlua2VyLmpzeCIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbImxpbmtlci50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFBWSxDQUFDO0FBQ2IsT0FBTyxJQUFJLE1BQU0sV0FBVyxDQUFDO0FBUTdCLE1BQU0sQ0FBQyxPQUFPLFdBQVcsRUFBQyxRQUFRLEVBQUUsSUFBSSxFQUFrQjtJQUN6RCxPQUFPLENBQUMsSUFBSSxDQUFDLElBQUksRUFBQyxJQUFJLEVBQUMsQ0FBQyxDQUFDLENBQUMsUUFBUSxDQUFDLEVBQUUsSUFBSSxDQUFDLENBQUM7QUFDNUMsQ0FBQyJ9

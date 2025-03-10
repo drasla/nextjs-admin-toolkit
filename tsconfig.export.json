@@ -1,12 +1,30 @@
 {
-  "extends": "./tsconfig.json",
   "compilerOptions": {
-    "outDir": "dist",
-    "noEmit": false,
+    "target": "esnext",
+    "lib": [
+      "esnext"
+    ],
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "incremental": true,
+    "declaration": true,
     "inlineSourceMap": true,
-    "declaration": true
+    "removeComments": true,
+    "paths": {}
   },
   "include": [
-    "./src/comp"
+    "./src/comp",
+    "./src/module.d.ts"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
