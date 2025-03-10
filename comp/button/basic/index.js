@@ -1,0 +1,10 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import Image from "next/image";
+import { fnCss } from "nextjs-tools";
+import CSS from "../index.module.scss";
+export default function ({ icon, children, className, type, style, disabled, onClick }) {
+    style = style || "normal";
+    type = type || "button";
+    return (_jsxs("button", { onClick, type, disabled, className: fnCss.concat(CSS["button"], CSS[style], className), children: [icon && (_jsx(Image, { className: "mb-3", src: icon, width: 16, height: 16, alt: "icon" })), children] }));
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sS0FBSyxNQUFNLFlBQVksQ0FBQztBQUMvQixPQUFPLEVBQUMsS0FBSyxFQUFDLE1BQU0sY0FBYyxDQUFDO0FBRW5DLE9BQU8sR0FBRyxNQUFNLHNCQUFzQixDQUFDO0FBYXZDLE1BQU0sQ0FBQyxPQUFPLFdBQVcsRUFBQyxJQUFJLEVBQUUsUUFBUSxFQUFFLFNBQVMsRUFBRSxJQUFJLEVBQUUsS0FBSyxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQVE7SUFDMUYsS0FBSyxHQUFHLEtBQUssSUFBSSxRQUFRLENBQUM7SUFDMUIsSUFBSSxHQUFHLElBQUksSUFBSSxRQUFRLENBQUM7SUFDeEIsT0FBTyxDQUNOLGtCQUNNLE9BQU8sRUFBRSxJQUFJLEVBQUUsUUFBUSxFQUM1QixTQUFTLEVBQUUsS0FBSyxDQUFDLE1BQU0sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLEVBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxFQUFFLFNBQVMsQ0FBQyxhQUM1RCxJQUFJLElBQUksQ0FDUixLQUFDLEtBQUssSUFDTCxTQUFTLEVBQUUsTUFBTSxFQUNqQixHQUFHLEVBQUUsSUFBSSxFQUNULEtBQUssRUFBRSxFQUFFLEVBQ1QsTUFBTSxFQUFFLEVBQUUsRUFDVixHQUFHLEVBQUUsTUFBTSxHQUNWLENBQ0YsRUFDQSxRQUFRLElBQ0QsQ0FDVCxDQUFDO0FBQ0gsQ0FBQyJ9

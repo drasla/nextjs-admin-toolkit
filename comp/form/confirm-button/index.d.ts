@@ -1,5 +1,5 @@
 import { Nullable } from "nextjs-tools";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { ButtonStyles } from "../../button/types";
 type Props = {
     form: Nullable<HTMLFormElement>;
@@ -11,5 +11,5 @@ type Props = {
     cancelText?: string;
     children?: ReactNode;
 };
-export default function ({ form, buttonStyle, buttonText, buttonClassName, confirmText, cancelText, children }: Props): React.JSX.Element;
+export default function ({ form, buttonStyle, buttonText, buttonClassName, confirmText, cancelText, children }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

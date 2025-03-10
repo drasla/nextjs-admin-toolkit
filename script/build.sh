@@ -1,8 +1,8 @@
 #!/bin/zsh
 
-rm ./comp/**/*.js || true;
-rm ./comp/**/*.jsx || true;
-rm ./comp/**/*.d.ts || true;
+rm ./comp/**/*.js;
+rm ./comp/**/*.jsx;
+rm ./comp/**/*.d.ts;
 
 tsc -p tsconfig.export.json;
-git add .;
+git add ./comp;

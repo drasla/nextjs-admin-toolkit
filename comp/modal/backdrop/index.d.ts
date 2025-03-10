@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 export type ModalBackdropProps = {
     children?: ReactNode;
     disableEscapeKey?: boolean;
@@ -6,7 +6,7 @@ export type ModalBackdropProps = {
     open: boolean;
     onClose: () => void;
 };
-declare function Component({ open, children, onClose, disableEscapeKey, disableBackdrop }: ModalBackdropProps): React.JSX.Element | null;
+declare function Component({ open, children, onClose, disableEscapeKey, disableBackdrop }: ModalBackdropProps): import("react/jsx-runtime").JSX.Element | null;
 declare namespace Component {
     var __isStatic: boolean;
 }

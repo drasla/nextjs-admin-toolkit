@@ -1,7 +1,7 @@
-import Asset from "comp/asset/index";
 import Image from "next/image";
 import {fnCss} from "nextjs-tools";
 import React from "react";
+import Asset from "../../asset";
 import Backdrop, {ModalBackdropProps} from "../../modal/backdrop";
 import CSS from "./index.module.scss";
 

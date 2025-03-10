@@ -3,5 +3,5 @@ type Props = {
     children: ReactNode;
     href: string;
 };
-export default function ({ children, href }: Readonly<Props>): import("react").JSX.Element;
+export default function ({ children, href }: Readonly<Props>): import("react/jsx-runtime").JSX.Element;
 export {};

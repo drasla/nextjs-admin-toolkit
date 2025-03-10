@@ -5,5 +5,5 @@ type Props<T> = {
     list: T[];
     linker: (row: T) => string;
 };
-export default function <T>({ items, className, list, linker }: Readonly<Props<T>>): import("react").JSX.Element;
+export default function <T>({ items, className, list, linker }: Readonly<Props<T>>): import("react/jsx-runtime").JSX.Element;
 export {};
