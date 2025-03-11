@@ -16,10 +16,12 @@ export default function <T>({items, className, list, linker}: Readonly<Props<T>>
 			{list.map((row, key) => (
 				<Linker
 					key={key}
-					href={linker(row)}>
-					{<Base.Row {...{row, items, className}} />}
+					href={linker(row)}
+					className={className}>
+					{<Base.Row {...{row, items}} />}
 				</Linker>
 			))}
+			<Base.Closer className={className} />
 		</>
 	);
 }

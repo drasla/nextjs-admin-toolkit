@@ -1,7 +1,0 @@
-import { fnCss } from "nextjs-tools";
-import React from "react";
-import CSS from "./index.module.scss";
-export default function ({ children, className }) {
-    return <div className={fnCss.concat(CSS["panel"], className)}>{children}</div>;
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanN4Iiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBQyxLQUFLLEVBQUMsTUFBTSxjQUFjLENBQUM7QUFDbkMsT0FBTyxLQUFrQixNQUFNLE9BQU8sQ0FBQztBQUN2QyxPQUFPLEdBQUcsTUFBTSxxQkFBcUIsQ0FBQztBQU90QyxNQUFNLENBQUMsT0FBTyxXQUFXLEVBQUMsUUFBUSxFQUFFLFNBQVMsRUFBUTtJQUNwRCxPQUFPLENBQUMsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUFDLEtBQUssQ0FBQyxNQUFNLENBQUMsR0FBRyxDQUFDLE9BQU8sQ0FBQyxFQUFFLFNBQVMsQ0FBQyxDQUFDLENBQUMsQ0FBQyxRQUFRLENBQUMsRUFBRSxHQUFHLENBQUMsQ0FBQztBQUNoRixDQUFDIn0=

@@ -1,8 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { fnCss } from "nextjs-tools";
-import { Fragment } from "react";
-import CSS from "./index.module.scss";
-export default async function ({ children, side, top }) {
-    return (_jsxs(Fragment, { children: [_jsx("div", { className: fnCss.concat("hidden lg:block", "fixed z-1 top-0 left-0 h-screen w-1/5 overflow-hidden overscroll-y-auto", CSS["side-nav"]), children: side }), _jsx("div", { className: fnCss.concat("fixed z-1 top-0", "w-full left-0 lg:left-1/5 lg:w-4/5", CSS["top-nav"]), children: top }), _jsx("div", { className: fnCss.concat("absolute", "left-0 w-full min-h-screen lg:left-1/5 lg:w-4/5 p-3", CSS["content"]), children: children })] }));
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBQyxLQUFLLEVBQUMsTUFBTSxjQUFjLENBQUM7QUFDbkMsT0FBYyxFQUFDLFFBQVEsRUFBWSxNQUFNLE9BQU8sQ0FBQztBQUNqRCxPQUFPLEdBQUcsTUFBTSxxQkFBcUIsQ0FBQztBQVF0QyxNQUFNLENBQUMsT0FBTyxDQUFDLEtBQUssV0FBVyxFQUFDLFFBQVEsRUFBRSxJQUFJLEVBQUUsR0FBRyxFQUFRO0lBQzFELE9BQU8sQ0FDTixNQUFDLFFBQVEsZUFDUixjQUNDLFNBQVMsRUFBRSxLQUFLLENBQUMsTUFBTSxDQUN0QixpQkFBaUIsRUFDakIseUVBQXlFLEVBQ3pFLEdBQUcsQ0FBQyxVQUFVLENBQUMsQ0FDZixZQUNBLElBQUksR0FDQSxFQUNOLGNBQUssU0FBUyxFQUFFLEtBQUssQ0FBQyxNQUFNLENBQUMsaUJBQWlCLEVBQUUsb0NBQW9DLEVBQUUsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUFDLFlBQ25HLEdBQUcsR0FDQyxFQUNOLGNBQ0MsU0FBUyxFQUFFLEtBQUssQ0FBQyxNQUFNLENBQ3RCLFVBQVUsRUFDVixxREFBcUQsRUFDckQsR0FBRyxDQUFDLFNBQVMsQ0FBQyxDQUNkLFlBQ0EsUUFBUSxHQUNKLElBQ0ksQ0FDWCxDQUFDO0FBQ0gsQ0FBQyJ9

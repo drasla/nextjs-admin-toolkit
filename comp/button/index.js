@@ -1,4 +1,0 @@
-import Basic from "./basic";
-import Link from "./link";
-export default { Basic, Link };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEtBQUssTUFBTSxTQUFTLENBQUM7QUFDNUIsT0FBTyxJQUFJLE1BQU0sUUFBUSxDQUFDO0FBRTFCLGVBQWUsRUFBQyxLQUFLLEVBQUUsSUFBSSxFQUFDLENBQUMifQ==

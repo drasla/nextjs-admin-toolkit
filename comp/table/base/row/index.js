@@ -1,7 +1,0 @@
-import { jsx as _jsx } from "react/jsx-runtime";
-import { fnCss } from "nextjs-tools";
-import CSS from "../../index.module.scss";
-export default function ({ items, className, row }) {
-    return (_jsx("div", { className: fnCss.concat(`flex`, CSS["table-top-border"], CSS["row"], CSS["hover"], className), children: items.map((header, i) => (_jsx("div", { className: fnCss.concat("p-3", CSS["table-row"], header.className), children: header.parser(row) }, i))) }));
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLE9BQU8sRUFBQyxLQUFLLEVBQUMsTUFBTSxjQUFjLENBQUM7QUFFbkMsT0FBTyxHQUFHLE1BQU0seUJBQXlCLENBQUM7QUFTMUMsTUFBTSxDQUFDLE9BQU8sV0FBYyxFQUFDLEtBQUssRUFBRSxTQUFTLEVBQUUsR0FBRyxFQUFxQjtJQUN0RSxPQUFPLENBQ04sY0FBSyxTQUFTLEVBQUUsS0FBSyxDQUFDLE1BQU0sQ0FBQyxNQUFNLEVBQUUsR0FBRyxDQUFDLGtCQUFrQixDQUFDLEVBQUUsR0FBRyxDQUFDLEtBQUssQ0FBQyxFQUFFLEdBQUcsQ0FBQyxPQUFPLENBQUMsRUFBRSxTQUFTLENBQUMsWUFDaEcsS0FBSyxDQUFDLEdBQUcsQ0FBQyxDQUFDLE1BQU0sRUFBRSxDQUFDLEVBQUUsRUFBRSxDQUFDLENBQ3pCLGNBRUMsU0FBUyxFQUFFLEtBQUssQ0FBQyxNQUFNLENBQUMsS0FBSyxFQUFFLEdBQUcsQ0FBQyxXQUFXLENBQUMsRUFBRSxNQUFNLENBQUMsU0FBUyxDQUFDLFlBQ2pFLE1BQU0sQ0FBQyxNQUFNLENBQUMsR0FBRyxDQUFDLElBRmQsQ0FBQyxDQUdELENBQ04sQ0FBQyxHQUNHLENBQ04sQ0FBQztBQUNILENBQUMifQ==

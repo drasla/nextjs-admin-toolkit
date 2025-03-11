@@ -16,7 +16,7 @@ export default function ({}: NextPageProps) {
 				</Layout.Accordion>
 			}>
 			<Layout.Panel>
-				<h1>table</h1>
+				<Layout.Title>Title</Layout.Title>
 				<Table.Link
 					className="w-full"
 					list={list}
