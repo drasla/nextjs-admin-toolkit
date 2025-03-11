@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "source .env && PORT=$PORT NODE_OPTIONS='--inspect --enable-source-maps=true' next dev --turbopack",
     "export": "sh ./script/build.sh",
-    "tag": "sh ./script/tag.sh $(cat ./version)"
+    "tag": "sh ./script/tag.sh $(cat ./version)",
+    "css": "tailwindcss -o ./src/scss/tailwind.css --watch"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
