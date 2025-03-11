@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@tailwindcss/cli':
+        specifier: ^4.0.12
+        version: 4.0.12
       luxon:
         specifier: 3.5.0
         version: 3.5.0
@@ -23,6 +26,9 @@ importers:
       react-dom:
         specifier: 19.0.0
         version: 19.0.0(react@19.0.0)
+      tailwindcss:
+        specifier: 4.0.12
+        version: 4.0.12
     devDependencies:
       '@tailwindcss/postcss':
         specifier: 4.0.12
@@ -45,9 +51,6 @@ importers:
       sass:
         specifier: 1.85.1
         version: 1.85.1
-      tailwindcss:
-        specifier: 4.0.12
-        version: 4.0.12
       tsc-alias:
         specifier: 1.8.11
         version: 1.8.11
@@ -319,6 +322,10 @@ packages:
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
+
+  '@tailwindcss/cli@4.0.12':
+    resolution: {integrity: sha512-ULTi5qO1tJUxhNYc4MPhS9I+OoGT5GqPkIZ9p82Bu8xe8852r3n+PDceh8U6yy1lSyGVZUu4K1S+9gShvCKXjg==}
+    hasBin: true
 
   '@tailwindcss/node@4.0.12':
     resolution: {integrity: sha512-a6J11K1Ztdln9OrGfoM75/hChYPcHYGNYimqciMrvKXRmmPaS8XZTHhdvb5a3glz4Kd4ZxE1MnuFE2c0fGGmtg==}
@@ -634,6 +641,10 @@ packages:
   micromatch@4.0.8:
     resolution: {integrity: sha512-PXwfBhYu0hBCPw8Dn0E+WDYb7af3dSLVWKi3HGv84IdF4TyFoC0ysxFd0Goxw7nSv4T/PzEJQxsYsEiFCKo2BA==}
     engines: {node: '>=8.6'}
+
+  mri@1.2.0:
+    resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
+    engines: {node: '>=4'}
 
   mylas@2.1.13:
     resolution: {integrity: sha512-+MrqnJRtxdF+xngFfUUkIMQrUUL0KsxbADUkn23Z/4ibGg192Q+z+CQyiYwvWTsYjJygmMR8+w3ZDa98Zh6ESg==}
@@ -1011,13 +1022,23 @@ snapshots:
       '@parcel/watcher-win32-arm64': 2.5.1
       '@parcel/watcher-win32-ia32': 2.5.1
       '@parcel/watcher-win32-x64': 2.5.1
-    optional: true
 
   '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
+
+  '@tailwindcss/cli@4.0.12':
+    dependencies:
+      '@parcel/watcher': 2.5.1
+      '@tailwindcss/node': 4.0.12
+      '@tailwindcss/oxide': 4.0.12
+      enhanced-resolve: 5.18.1
+      lightningcss: 1.29.2
+      mri: 1.2.0
+      picocolors: 1.1.1
+      tailwindcss: 4.0.12
 
   '@tailwindcss/node@4.0.12':
     dependencies:
@@ -1178,8 +1199,7 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  detect-libc@1.0.3:
-    optional: true
+  detect-libc@1.0.3: {}
 
   detect-libc@2.0.3: {}
 
@@ -1315,6 +1335,8 @@ snapshots:
       braces: 3.0.3
       picomatch: 2.3.1
 
+  mri@1.2.0: {}
+
   mylas@2.1.13: {}
 
   nanoid@3.3.9: {}
@@ -1349,8 +1371,7 @@ snapshots:
     dependencies:
       pbkdf2: 3.1.2
 
-  node-addon-api@7.1.1:
-    optional: true
+  node-addon-api@7.1.1: {}
 
   normalize-path@3.0.0: {}
 

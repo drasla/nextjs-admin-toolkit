@@ -44,6 +44,9 @@
       ],
       "@scss/*": [
         "./src/scss/*"
+      ],
+      "@dist/*": [
+        "./dist/*"
       ]
     }
   },
@@ -54,7 +57,6 @@
     ".next/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules",
-    "dist"
+    "node_modules"
   ]
 }

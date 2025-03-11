@@ -10,4 +10,5 @@ cp -r ./src/asset ./dist/
 rm ./dist/asset/index.ts
 tsc -p tsconfig.export.json;
 tsc-alias -p tsconfig.export.json;
+pnpm tailwindcss -o ./dist/index.css;
 git add .;
