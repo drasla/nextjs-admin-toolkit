@@ -24,7 +24,7 @@ export default async function ({children, side, top}: Props) {
 			<div
 				className={fnCss.concat(
 					"absolute",
-					"left-0 w-full min-h-screen lg:left-1/5 lg:w-4/5 p-3",
+					"left-0 min-h-screen lg:left-1/5 lg:w-4/5 p-3",
 					"partition-content"
 				)}>
 				{children}
