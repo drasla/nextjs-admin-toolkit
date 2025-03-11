@@ -9,11 +9,13 @@ type Props = {
     required?: boolean;
     name?: string;
     defaultValue?: string;
+    value?: string;
     type?: HTMLInputTypeAttribute;
     autoComplete?: HTMLInputAutoCompleteAttribute;
     inputMode?: HTMLInputModeAttribute;
     regexp?: string;
     invalidMessage?: string;
+    readOnly?: boolean;
 };
-export default function ({ label, className, hidden, children, disabled, required, name, defaultValue, type, autoComplete, inputMode, regexp, invalidMessage, }: Props): import("react/jsx-runtime").JSX.Element;
+export default function ({ label, className, hidden, children, disabled, required, name, defaultValue, type, autoComplete, inputMode, regexp, invalidMessage, readOnly, }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

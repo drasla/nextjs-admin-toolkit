@@ -53,6 +53,12 @@ export default function ({}: NextPageProps) {
 					{...sampleForm.password}
 					label="password"
 				/>
+
+				<Form.Input
+					{...sampleForm.password}
+					label="password"
+					readOnly
+				/>
 			</Layout.Panel>
 		</Layout.Partition>
 	);

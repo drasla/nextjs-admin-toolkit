@@ -11,11 +11,13 @@ type Props = {
 	required?: boolean;
 	name?: string;
 	defaultValue?: string;
+	value?: string;
 	type?: HTMLInputTypeAttribute;
 	autoComplete?: HTMLInputAutoCompleteAttribute;
 	inputMode?: HTMLInputModeAttribute;
 	regexp?: string;
 	invalidMessage?: string;
+	readOnly?: boolean;
 	// todo 빈값일 때 처리하는 기능 추가하기
 	// emptyValue?: boolean;
 };
@@ -34,6 +36,7 @@ export default function ({
 	inputMode,
 	regexp,
 	invalidMessage,
+	readOnly,
 }: Props) {
 	const [value, setValue] = useState(defaultValue || "");
 	const isValid = new RegExp(regexp || "").test(`${value || ""}`);
@@ -54,8 +57,13 @@ export default function ({
 
 			<div className="flex items-center">
 				<input
-					{...{disabled, required, name, type, autoComplete, inputMode}}
-					className={fnCss.concat("grow", errMsg && "wrong", "input", "tag")}
+					{...{disabled, required, name, type, autoComplete, inputMode, readOnly}}
+					className={fnCss.concat(
+						"grow",
+						errMsg && "wrong",
+						"input",
+						readOnly ? "readonly cursor-not-allowed" : "tag"
+					)}
 					onChange={(e) => setValue(e.target.value)}
 					value={value}
 				/>
