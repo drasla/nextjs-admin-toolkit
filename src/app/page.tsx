@@ -18,7 +18,7 @@ export default function ({}: NextPageProps) {
 			<Layout.Panel>
 				<Layout.Title>Title</Layout.Title>
 				<Table.Link
-					className="w-full"
+					className="mb-4"
 					list={list}
 					linker={(v) => `/${v.name}`}
 					items={[

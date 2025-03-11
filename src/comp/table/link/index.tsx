@@ -11,17 +11,16 @@ type Props<T> = {
 
 export default function <T>({items, className, list, linker}: Readonly<Props<T>>) {
 	return (
-		<>
-			<TableBase.Header {...{items, className}} />
+		<div className={className}>
+			<TableBase.Header {...{items}} />
 			{list.map((row, key) => (
 				<Linker
 					key={key}
-					href={linker(row)}
-					className={className}>
+					href={linker(row)}>
 					{<TableBase.Row {...{row, items}} />}
 				</Linker>
 			))}
-			<TableBase.Closer className={className} />
-		</>
+			<TableBase.Closer />
+		</div>
 	);
 }

@@ -14,7 +14,7 @@ export default function ({children, href, icon}: Props) {
 	const router = useRouter();
 	return (
 		<div
-			className={fnCss.concat("partition-nav-height", "flex items-center justify-center font-bold no-drag")}
+			className={fnCss.concat("partition-nav-height", "flex items-center font-bold no-drag pl-3 pr-3")}
 			onClick={(e) => {
 				e.stopPropagation();
 				e.preventDefault();
