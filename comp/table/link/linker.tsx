@@ -2,7 +2,6 @@
 import {useRouter} from "next/navigation";
 import {fnCss} from "nextjs-tools";
 import {ReactNode} from "react";
-import CSS from "../index.module.scss";
 
 type Props = {
 	children: ReactNode;
@@ -14,7 +13,7 @@ export default function ({children, href, className}: Readonly<Props>) {
 	const router = useRouter();
 	return (
 		<div
-			className={fnCss.concat(`flex`, CSS["table-top-border"], CSS["row"], CSS["hover"], className)}
+			className={fnCss.concat(`flex`, "table-top-border table-content hover", className)}
 			onClick={(e) => {
 				e.stopPropagation();
 				e.preventDefault();

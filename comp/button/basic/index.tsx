@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {fnCss} from "nextjs-tools";
 import React, {MouseEventHandler, ReactNode} from "react";
-import CSS from "../index.module.scss";
 import {ButtonStyles} from "../types";
 
 type Props = {
@@ -20,7 +19,7 @@ export default function ({icon, children, className, type, style, disabled, onCl
 	return (
 		<button
 			{...{onClick, type, disabled}}
-			className={fnCss.concat(CSS["button"], CSS[style], className)}>
+			className={fnCss.concat("button", style, className)}>
 			{icon && (
 				<Image
 					className={"mb-3"}

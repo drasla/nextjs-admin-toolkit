@@ -1,0 +1,19 @@
+.modal-background {
+  background-color: var(--color-modal-background);
+  overscroll-behavior: none;
+}
+
+.modal-close {
+  border-radius: 15px;
+  padding: 0.2rem;
+  overflow: hidden;
+}
+
+.modal-close:hover {
+  background-color: var(--color-modal-close-button-hover);
+}
+
+.modal-content {
+  background-color: var(--color-modal-content-background);
+  min-width: 20rem;
+}

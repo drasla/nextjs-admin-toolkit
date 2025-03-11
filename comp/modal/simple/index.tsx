@@ -1,9 +1,8 @@
 import Image from "next/image";
 import {fnCss} from "nextjs-tools";
 import React from "react";
-import Asset from "../../asset";
-import Backdrop, {ModalBackdropProps} from "../../modal/backdrop";
-import CSS from "./index.module.scss";
+import {Asset} from "../../../asset";
+import Backdrop, {ModalBackdropProps} from "../backdrop";
 
 type Props = {
 	disableCloseButton?: boolean;
@@ -25,7 +24,7 @@ export default function ({open, onClose, children, disableEscapeKey, disableBack
 				{!disableCloseButton && (
 					<div className="w-full pb-2 flex justify-end">
 						<Image
-							className={fnCss.concat(CSS["close"], "cursor-pointer")}
+							className={fnCss.concat("modal-close", "cursor-pointer")}
 							width={30}
 							height={30}
 							src={Asset.svg.cross}
@@ -34,7 +33,7 @@ export default function ({open, onClose, children, disableEscapeKey, disableBack
 						/>
 					</div>
 				)}
-				<div className={fnCss.concat("w-full p-4 rounded-md shadow-2xl", CSS["content"])}>{children}</div>
+				<div className={fnCss.concat("w-full p-4 rounded-md shadow-2xl", "modal-content")}>{children}</div>
 			</div>
 		</Backdrop>
 	);

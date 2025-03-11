@@ -1,6 +1,5 @@
 import {fnCss} from "nextjs-tools";
 import React, {ReactNode} from "react";
-import CSS from "./index.module.scss";
 
 type Props = {
 	className?: string;
@@ -8,5 +7,5 @@ type Props = {
 };
 
 export default function ({children, className}: Props) {
-	return <div className={fnCss.concat(CSS["panel"], className)}>{children}</div>;
+	return <div className={fnCss.concat("panel", className)}>{children}</div>;
 }

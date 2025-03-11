@@ -1,8 +1,10 @@
 #!/bin/zsh
 
-rm ./comp/**/*.js;
-rm ./comp/**/*.jsx;
-rm ./comp/**/*.d.ts;
-
+rm -rf "./dist"
+mkdir ./dist
+cp ./module.d.ts ./dist/
+cp -r ./scss ./dist/
+cp -r ./asset ./dist/
 tsc -p tsconfig.export.json;
-git add ./comp;
+tsc-alias -p tsconfig.export.json;
+git add .;

@@ -1,6 +1,6 @@
 import {PropsChildren} from "index";
 import {fnEnv} from "nextjs-tools";
-import "../../index.scss";
+import "../../../scss/index.scss";
 
 export default async function ({children}: PropsChildren) {
 	return (

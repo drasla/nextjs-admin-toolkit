@@ -1,7 +1,6 @@
 "use client";
 import {fnCss, HTMLInputModeAttribute} from "nextjs-tools";
 import React, {HTMLInputAutoCompleteAttribute, HTMLInputTypeAttribute, ReactNode, useEffect, useState} from "react";
-import CSS from "../index.module.scss";
 
 type Props = {
 	label?: ReactNode;
@@ -47,7 +46,7 @@ export default function ({
 	return (
 		<div className={fnCss.concat(className, hidden ? "hidden" : "")}>
 			{label && (
-				<div className={CSS["label"]}>
+				<div className="label">
 					{label}
 					{errMsg && <span className="color-warning ml-2">({errMsg})</span>}
 				</div>
@@ -56,7 +55,7 @@ export default function ({
 			<div className="flex items-center">
 				<input
 					{...{disabled, required, name, type, autoComplete, inputMode}}
-					className={fnCss.concat("grow", errMsg && CSS["wrong"], CSS["input"], CSS["tag"])}
+					className={fnCss.concat("grow", errMsg && "wrong", "input", "tag")}
 					onChange={(e) => setValue(e.target.value)}
 					value={value}
 				/>

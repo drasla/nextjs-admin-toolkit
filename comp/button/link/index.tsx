@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {fnCss} from "nextjs-tools";
 import React, {ReactNode} from "react";
-import CSS from "../index.module.scss";
 
 type Props = {
 	icon?: string;
@@ -16,7 +15,7 @@ export default function ({icon, children, href, style, className}: Props) {
 	style = style || "normal";
 	return (
 		<Link href={href}>
-			<div className={fnCss.concat(CSS["button"], CSS[style], className, "flex items-center justify-center")}>
+			<div className={fnCss.concat("button", style, className, "flex items-center justify-center")}>
 				{icon && (
 					<Image
 						className={"mr-1"}

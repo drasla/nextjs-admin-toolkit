@@ -1,4 +1,4 @@
-import Base from "../base";
+import {TableBase} from "@comp/table/base";
 import {TableItem} from "../types";
 import Linker from "./linker";
 
@@ -12,16 +12,16 @@ type Props<T> = {
 export default function <T>({items, className, list, linker}: Readonly<Props<T>>) {
 	return (
 		<>
-			<Base.Header {...{items, className}} />
+			<TableBase.Header {...{items, className}} />
 			{list.map((row, key) => (
 				<Linker
 					key={key}
 					href={linker(row)}
 					className={className}>
-					{<Base.Row {...{row, items}} />}
+					{<TableBase.Row {...{row, items}} />}
 				</Linker>
 			))}
-			<Base.Closer className={className} />
+			<TableBase.Closer className={className} />
 		</>
 	);
 }

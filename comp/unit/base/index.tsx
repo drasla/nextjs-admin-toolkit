@@ -3,7 +3,6 @@ import Image from "next/image";
 import {fnCss} from "nextjs-tools";
 import React, {MouseEventHandler} from "react";
 import {AlignJustifyCSS} from "../../types";
-import CSS from "./index.module.scss";
 
 export type PrintBaseProps = {
 	icon?: string;
@@ -32,10 +31,10 @@ export default function ({icon, className, children, align, copy, ellipsis, leng
 	};
 
 	return (
-		<div className={fnCss.concat("no-drag flex items-center", CSS["value"], align, className)}>
+		<div className={fnCss.concat("no-drag flex items-center", "unit-value", align, className)}>
 			{icon && (
 				<Image
-					className={fnCss.concat("mr-1 pt-1/2", CSS["icon"])}
+					className={fnCss.concat("mr-1 pt-1/2", "unit-icon")}
 					width={18}
 					height={18}
 					src={icon}
@@ -44,7 +43,7 @@ export default function ({icon, className, children, align, copy, ellipsis, leng
 				/>
 			)}
 			<div
-				className={fnCss.concat(copy && CSS["copy"])}
+				className={fnCss.concat(copy && "unit-copy")}
 				onClick={onCopy}>
 				{value}
 			</div>

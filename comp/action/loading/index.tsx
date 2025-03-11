@@ -1,5 +1,5 @@
 import React, {ReactNode} from "react";
-import Modal from "../../modal";
+import {Modal} from "../../modal";
 
 type Props = {
 	pending: boolean;

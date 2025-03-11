@@ -3,7 +3,6 @@ import Image from "next/image";
 import {useRouter} from "next/navigation";
 import {fnCss} from "nextjs-tools";
 import React, {ReactNode} from "react";
-import CSS from "../partition/index.module.scss";
 
 type Props = {
 	icon?: string;
@@ -15,7 +14,7 @@ export default function ({children, href, icon}: Props) {
 	const router = useRouter();
 	return (
 		<div
-			className={fnCss.concat(CSS["nav-height"], "flex items-center justify-center font-bold no-drag")}
+			className={fnCss.concat("partition-nav-height", "flex items-center justify-center font-bold no-drag")}
 			onClick={(e) => {
 				e.stopPropagation();
 				e.preventDefault();

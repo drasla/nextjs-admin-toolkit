@@ -1,7 +1,6 @@
 "use client";
 import {fnCss} from "nextjs-tools";
 import React, {MouseEventHandler, ReactNode, useCallback, useEffect} from "react";
-import CSS from "./index.module.scss";
 
 export type ModalBackdropProps = {
 	children?: ReactNode;
@@ -52,7 +51,7 @@ export default function Component({open, children, onClose, disableEscapeKey, di
 				"w-screen h-screen z-100 fixed left-0 top-0",
 				"flex items-center justify-center",
 				"backdrop-blur-xs backdrop-grayscale-40",
-				CSS["background"]
+				"modal-background"
 			)}
 			onClick={onClick}>
 			<div

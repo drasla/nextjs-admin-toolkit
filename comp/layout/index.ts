@@ -6,4 +6,4 @@ import Panel from "./panel";
 import Partition from "./partition";
 import Title from "./title";
 
-export default {Partition, Accordion, Panel, Title, Error, HTML, Header};
+export const Layout = {Partition, Accordion, Panel, Title, Error, HTML, Header};

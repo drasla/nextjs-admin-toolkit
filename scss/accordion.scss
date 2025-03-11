@@ -1,0 +1,38 @@
+.accordion-item {
+  cursor: pointer;
+  border-radius: 0.5rem;
+
+  div {
+    color: var(--color-side-nav-font);
+  }
+}
+
+.accordion-item:hover {
+  background-color: var(--color-side-nav-hover);
+
+  div {
+    color: var(--color-side-nav-font-hover);
+    font-weight: 700;
+  }
+}
+
+.accordion-item.active {
+  background-color: var(--color-side-nav-active);
+
+  div {
+    color: var(--color-side-nav-font-active);
+    font-weight: 700;
+  }
+}
+
+.accordion-icon {
+  filter: var(--sise-nav-icon-filter)
+}
+
+.accordion-icon.active {
+  filter: var(--filter-side-nav-icon-active);
+}
+
+.accordion-title {
+  color: var(--color-side-nav-title);
+}

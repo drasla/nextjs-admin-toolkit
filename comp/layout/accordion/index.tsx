@@ -3,7 +3,6 @@ import Image from "next/image";
 import {usePathname, useRouter} from "next/navigation";
 import {fnCss} from "nextjs-tools";
 import React, {Fragment, ReactNode} from "react";
-import CSS from "./index.module.scss";
 
 type Props = {
 	items: AccordionItem[];
@@ -54,8 +53,8 @@ function SubMenus({items}: {items: AccordionSubmenu[]}) {
 								className={fnCss.concat(
 									"flex w-full h-full items-center pr-3 pl-3",
 									v.className,
-									CSS["item"],
-									active ? CSS["active"] : ""
+									"accordion-item",
+									active ? "active" : ""
 								)}
 								onClick={() => router.push(v.href || "!")}>
 								<Icon
@@ -77,7 +76,7 @@ function Icon({value, active, size}: {value: string; active: boolean; size?: num
 	size = size || 20;
 	return (
 		<Image
-			className={fnCss.concat("mr-2", CSS["icon"], active ? CSS["active"] : "")}
+			className={fnCss.concat("mr-2", "accordion-icon", active ? "active" : "")}
 			src={value}
 			alt="logo"
 			width={size}
@@ -90,7 +89,7 @@ function Title({children, className}: {children?: ReactNode | string; className?
 	return (
 		<>
 			<div className="h-4" />
-			<h5 className={fnCss.concat("pl-5 font-bold mb-2", CSS["title"], className, "no-drag")}>{children}</h5>
+			<h5 className={fnCss.concat("pl-5 font-bold mb-2", "accordion-title", className, "no-drag")}>{children}</h5>
 		</>
 	);
 }

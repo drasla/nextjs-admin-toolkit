@@ -1,17 +1,16 @@
 "use client";
 import {fnCss} from "nextjs-tools";
 import React, {Fragment} from "react";
-import CSS from "./index.module.scss";
 
 interface Props {
 	buttons?: number;
 	page: number;
 	size: number;
 	total: number;
-	onClick: (page: number) => void;
+	onClick?: (page: number) => void;
 }
 
-export default function Component({buttons, page, size, total, onClick}: Props) {
+export default function ({buttons, page, size, total, onClick}: Props) {
 	buttons = buttons || 3;
 
 	const last = Math.floor(total / size) + (0 < Math.floor(total / size) && 0 < total % size ? 1 : 0);
@@ -33,13 +32,13 @@ export default function Component({buttons, page, size, total, onClick}: Props) 
 	const hasNext = items.findIndex((v) => v === last) === -1;
 
 	const onNavigate = (page: number) => {
-		onClick(page);
+		if (onClick) onClick(page);
 	};
 
 	return (
 		<div className="flex justify-center items-center no-drag">
 			<div
-				className={fnCss.concat(CSS["pager"], CSS["hover"], page === 0 ? CSS["disabled"] : "")}
+				className={fnCss.concat("pager hover", page === 0 ? "disabled" : "")}
 				onClick={() => {
 					if (page === 0) return;
 					onNavigate(page - 1);
@@ -50,31 +49,31 @@ export default function Component({buttons, page, size, total, onClick}: Props) 
 			{hasPrev && (
 				<Fragment>
 					<div
-						className={fnCss.concat(CSS["pager"], CSS["hover"])}
+						className="pager hover"
 						onClick={() => onNavigate(0)}>
 						1
 					</div>
-					<div className={fnCss.concat(CSS["pager"])}>...</div>
+					<div className="pager">...</div>
 				</Fragment>
 			)}
 
-			{items.map((page, key) => (
+			{items.map((i, key) => (
 				<div
-					className={fnCss.concat(CSS["pager"], CSS["hover"], page === page ? CSS["active"] : "")}
+					className={fnCss.concat("pager hover", page === i ? "active" : "")}
 					key={key}
 					onClick={() => {
-						if (page === page) return;
-						onNavigate(page);
+						if (page === i) return;
+						onNavigate(i);
 					}}>
-					{page + 1}
+					{i + 1}
 				</div>
 			))}
 
 			{hasNext && (
 				<Fragment>
-					<div className={fnCss.concat(CSS["pager"])}>...</div>
+					<div className={fnCss.concat("pager")}>...</div>
 					<div
-						className={fnCss.concat(CSS["pager"], CSS["hover"])}
+						className="pager hover"
 						onClick={() => onNavigate(last + 1)}>
 						{last + 1}
 					</div>
@@ -82,7 +81,7 @@ export default function Component({buttons, page, size, total, onClick}: Props) 
 			)}
 
 			<div
-				className={fnCss.concat(CSS["pager"], CSS["hover"], page === last ? CSS["disabled"] : "")}
+				className={fnCss.concat("pager hover", page === last ? "disabled" : "")}
 				onClick={() => {
 					if (page === last) return;
 					onNavigate(page + 1);

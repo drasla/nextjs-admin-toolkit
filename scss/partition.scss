@@ -1,0 +1,20 @@
+$nav-height: 64px;
+
+.partition-nav-height {
+  height: $nav-height;
+}
+
+.partition-top-nav {
+  height: $nav-height;
+  background-color: var(--color-body);
+  border-bottom: 1px solid var(--color-panel-border);
+}
+
+.partition-content {
+  padding-top: $nav-height+16px;
+  background-color: var(--color-content-background);
+}
+
+.partition-side-nav {
+  border-right: 1px solid var(--color-panel-border);
+}

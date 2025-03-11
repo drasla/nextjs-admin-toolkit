@@ -1,5 +1,4 @@
 import {fnCss} from "nextjs-tools";
-import CSS from "../../index.module.scss";
 import {TableItem} from "../../types";
 
 type Props<T> = {
@@ -9,15 +8,11 @@ type Props<T> = {
 
 export default function <T>({items, className}: Readonly<Props<T>>) {
 	return (
-		<div className={fnCss.concat(`flex`, CSS["table-top-border"], CSS["row"], className, "font-bold")}>
+		<div className={fnCss.concat("flex font-bold", "table-top-border table-content", className)}>
 			{items.map((v, i) => (
 				<div
 					key={i}
-					className={fnCss.concat(
-						"p-3 flex font-bold justify-center items-center",
-						CSS["table-header"],
-						v.className
-					)}>
+					className={fnCss.concat("p-3", "table-header text-center", v.className)}>
 					{v.name}
 				</div>
 			))}

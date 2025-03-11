@@ -3,7 +3,7 @@ import Errors from "./errors";
 import Loading from "./loading";
 import Redirect from "./redirect";
 
-export default {
+export const Action = {
 	DoneModal,
 	Errors,
 	Loading,

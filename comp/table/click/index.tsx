@@ -1,8 +1,7 @@
 "use client";
+import {TableBase} from "@comp/table/base";
 import {fnCss} from "nextjs-tools";
 import {MouseEventHandler} from "react";
-import Base from "../base";
-import CSS from "../index.module.scss";
 import {TableItem} from "../types";
 
 type Props<T> = {
@@ -15,16 +14,16 @@ type Props<T> = {
 export default function <T>({items, className, list, onClick}: Readonly<Props<T>>) {
 	return (
 		<>
-			<Base.Header {...{items, className}} />
+			<TableBase.Header {...{items, className}} />
 			{list.map((row, key) => (
 				<div
-					className={fnCss.concat(`flex`, CSS["table-top-border"], CSS["row"], CSS["hover"], className)}
+					className={fnCss.concat(`flex`, "table-top-border table-content hover", className)}
 					key={key}
 					onClick={onClick}>
-					{<Base.Row {...{row, items}} />}
+					{<TableBase.Row {...{row, items}} />}
 				</div>
 			))}
-			<Base.Closer {...{className}} />
+			<TableBase.Closer {...{className}} />
 		</>
 	);
 }

@@ -1,8 +1,8 @@
 "use client";
 import {State} from "nextjs-tools";
 import React, {ReactNode, useEffect, useState} from "react";
-import Button from "../../button";
-import Modal from "../../modal";
+import {Button} from "../../button";
+import {Modal} from "../../modal";
 
 type Props<T> = {
 	children?: ReactNode;

@@ -1,0 +1,12 @@
+.unit-icon {
+  filter: var(--filter-print-icon);
+}
+
+.unit-value {
+  color: var(--color-print);
+}
+
+.unit-copy:hover {
+  text-decoration: underline;
+  cursor: copy;
+}

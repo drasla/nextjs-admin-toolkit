@@ -1,4 +1,5 @@
 import {sampleForm} from "@app/form";
+import {Pager} from "@comp/pager";
 import {AccordionItem} from "comp/layout/accordion";
 import {Asset, Button, Form, Layout, Table, Unit} from "index";
 import {NextPageProps} from "nextjs-tools";
@@ -39,6 +40,12 @@ export default function ({}: NextPageProps) {
 							parser: (v) => <Unit.Ip align="justify-start">{v.name}</Unit.Ip>,
 						},
 					]}
+				/>
+
+				<Pager.Base
+					page={30}
+					size={20}
+					total={1000}
 				/>
 
 				<Button.Basic>Button</Button.Basic>

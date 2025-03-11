@@ -1,9 +1,9 @@
 "use client";
 import {fnCss, Nullable} from "nextjs-tools";
 import React, {MouseEventHandler, ReactNode, useState} from "react";
-import Button from "../../button";
+import {Button} from "../../button";
 import {ButtonStyles} from "../../button/types";
-import Modal from "../../modal";
+import {Modal} from "../../modal";
 
 type Props = {
 	form: Nullable<HTMLFormElement>;
