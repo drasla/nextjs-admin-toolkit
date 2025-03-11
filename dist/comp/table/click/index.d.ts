@@ -1,10 +1,10 @@
 import { TableItem } from "../../table/types";
-import { MouseEventHandler } from "react";
+import { MouseEvent } from "react";
 type Props<T> = {
     items: TableItem<T>[];
     className?: string;
     list: T[];
-    onClick: MouseEventHandler<HTMLDivElement>;
+    onClick: (event: MouseEvent<HTMLDivElement>, row: T) => void;
 };
 export default function <T>({ items, className, list, onClick }: Readonly<Props<T>>): import("react/jsx-runtime").JSX.Element;
 export {};
