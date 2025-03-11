@@ -1,4 +1,4 @@
-import { TableItem } from "../../types";
+import { TableItem } from "../../../table/types";
 type Props<T> = {
     items: Pick<TableItem<T>, "name" | "className">[];
     className?: string;

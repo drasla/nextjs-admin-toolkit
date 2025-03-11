@@ -1,8 +1,9 @@
-import ConfirmButton from "./confirm-button";
-import Field from "./field";
-import Input from "./input";
-export declare const Form: {
+import ConfirmButton from "../form/confirm-button";
+import Field from "../form/field";
+import Input from "../form/input";
+declare const _default: {
     ConfirmButton: typeof ConfirmButton;
     Field: typeof Field;
     Input: typeof Input;
 };
+export default _default;

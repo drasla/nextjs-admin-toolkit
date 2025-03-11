@@ -1,6 +1,6 @@
+import { ButtonStyles } from "../../button/types";
 import { Nullable } from "nextjs-tools";
 import { ReactNode } from "react";
-import { ButtonStyles } from "../../button/types";
 type Props = {
     form: Nullable<HTMLFormElement>;
     pending: boolean;

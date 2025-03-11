@@ -1,7 +1,6 @@
 import {sampleForm} from "@app/form";
-import {Pager} from "@comp/pager";
-import {AccordionItem} from "comp/layout/accordion";
-import {Asset, Button, Form, Layout, Table, Unit} from "index";
+import {AccordionItem} from "@comp/layout/accordion";
+import {Asset, Button, Form, Layout, Pager, Table, Unit} from "@src";
 import {NextPageProps} from "nextjs-tools";
 
 export default function ({}: NextPageProps) {

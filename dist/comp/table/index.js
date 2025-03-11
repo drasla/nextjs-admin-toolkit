@@ -1,3 +1,4 @@
-import Click from "./click";
-import Link from "./link";
-export const Table = { Link, Click };
+import Click from "../table/click";
+import Link from "../table/link";
+export default { Link, Click };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvY29tcC90YWJsZS9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEtBQUssTUFBTSxtQkFBbUIsQ0FBQztBQUN0QyxPQUFPLElBQUksTUFBTSxrQkFBa0IsQ0FBQztBQUVwQyxlQUFlLEVBQUMsSUFBSSxFQUFFLEtBQUssRUFBQyxDQUFDIn0=

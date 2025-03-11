@@ -15,8 +15,8 @@ importers:
         specifier: 15.2.1
         version: 15.2.1(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.85.1)
       nextjs-tools:
-        specifier: github:d3v-friends/nextjs-tools#0.1.8
-        version: https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/a267cc92cdd8e08c1e66d8ae9cea2515a27a8838
+        specifier: github:d3v-friends/nextjs-tools#0.1.11
+        version: https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/505c82755270a62592aece1b0a27a020aaae0cad
       react:
         specifier: 19.0.0
         version: 19.0.0
@@ -402,9 +402,6 @@ packages:
   '@types/node@20.17.24':
     resolution: {integrity: sha512-d7fGCyB96w9BnWQrOsJtpyiSaBcAYYr75bnK6ZRjDbql2cGLj/3GsL5OYmLPNq76l7Gf2q4Rv9J2o6h5CrD9sA==}
 
-  '@types/pbkdf2@3.1.2':
-    resolution: {integrity: sha512-uRwJqmiXmh9++aSu1VNEn3iIxWOhd8AHXNSdlaLfdAAdSTY9jYVeGWnzejM3dvrkbqE3/hyQkQQ29IFATEGlew==}
-
   '@types/react-dom@19.0.4':
     resolution: {integrity: sha512-4fSQ8vWFkg+TGhePfUzVmat3eC14TXYSsiiDSLI0dVLsrm9gZFABjPy/Qu6TKgl1tq1Bu1yDsuQgY3A3DOjCcg==}
     peerDependencies:
@@ -668,8 +665,8 @@ packages:
       sass:
         optional: true
 
-  nextjs-tools@https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/a267cc92cdd8e08c1e66d8ae9cea2515a27a8838:
-    resolution: {tarball: https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/a267cc92cdd8e08c1e66d8ae9cea2515a27a8838}
+  nextjs-tools@https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/505c82755270a62592aece1b0a27a020aaae0cad:
+    resolution: {tarball: https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/505c82755270a62592aece1b0a27a020aaae0cad}
     version: 0.0.0
 
   node-addon-api@7.1.1:
@@ -1090,10 +1087,6 @@ snapshots:
     dependencies:
       undici-types: 6.19.8
 
-  '@types/pbkdf2@3.1.2':
-    dependencies:
-      '@types/node': 20.17.24
-
   '@types/react-dom@19.0.4(@types/react@19.0.10)':
     dependencies:
       '@types/react': 19.0.10
@@ -1352,9 +1345,8 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-tools@https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/a267cc92cdd8e08c1e66d8ae9cea2515a27a8838:
+  nextjs-tools@https://codeload.github.com/d3v-friends/nextjs-tools/tar.gz/505c82755270a62592aece1b0a27a020aaae0cad:
     dependencies:
-      '@types/pbkdf2': 3.1.2
       pbkdf2: 3.1.2
 
   node-addon-api@7.1.1:

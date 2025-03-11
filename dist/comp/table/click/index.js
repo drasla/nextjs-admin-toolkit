@@ -1,7 +1,8 @@
 "use client";
 import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-import { TableBase } from "../../table/base";
+import TableBase from "../../table/base";
 import { fnCss } from "nextjs-tools";
 export default function ({ items, className, list, onClick }) {
     return (_jsxs(_Fragment, { children: [_jsx(TableBase.Header, { items, className }), list.map((row, key) => (_jsx("div", { className: fnCss.concat(`flex`, "table-top-border table-content hover", className), onClick: onClick, children: _jsx(TableBase.Row, { row, items }) }, key))), _jsx(TableBase.Closer, { className })] }));
 }
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvY29tcC90YWJsZS9jbGljay9pbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFBWSxDQUFDOztBQUNiLE9BQU8sU0FBUyxNQUFNLGtCQUFrQixDQUFDO0FBRXpDLE9BQU8sRUFBQyxLQUFLLEVBQUMsTUFBTSxjQUFjLENBQUM7QUFVbkMsTUFBTSxDQUFDLE9BQU8sV0FBYyxFQUFDLEtBQUssRUFBRSxTQUFTLEVBQUUsSUFBSSxFQUFFLE9BQU8sRUFBcUI7SUFDaEYsT0FBTyxDQUNOLDhCQUNDLEtBQUMsU0FBUyxDQUFDLE1BQU0sSUFBTSxLQUFLLEVBQUUsU0FBUyxHQUFLLEVBQzNDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQyxHQUFHLEVBQUUsR0FBRyxFQUFFLEVBQUUsQ0FBQyxDQUN2QixjQUNDLFNBQVMsRUFBRSxLQUFLLENBQUMsTUFBTSxDQUFDLE1BQU0sRUFBRSxzQ0FBc0MsRUFBRSxTQUFTLENBQUMsRUFFbEYsT0FBTyxFQUFFLE9BQU8sWUFDZixLQUFDLFNBQVMsQ0FBQyxHQUFHLElBQU0sR0FBRyxFQUFFLEtBQUssR0FBSyxJQUYvQixHQUFHLENBR0gsQ0FDTixDQUFDLEVBQ0YsS0FBQyxTQUFTLENBQUMsTUFBTSxJQUFNLFNBQVMsR0FBSyxJQUNuQyxDQUNILENBQUM7QUFDSCxDQUFDIn0=

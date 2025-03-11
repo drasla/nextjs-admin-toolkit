@@ -27,20 +27,23 @@
       "@app/*": [
         "./src/app/*"
       ],
+      "@src": [
+        "./src"
+      ],
       "@comp/*": [
-        "./comp/*"
+        "./src/comp/*"
       ],
       "@asset/*": [
-        "./asset/*"
+        "./src/asset/*"
       ],
       "@asset": [
-        "./asset"
+        "./src/asset"
       ],
       "@scss": [
-        "./scss"
+        "./src/scss"
       ],
       "@scss/*": [
-        "./scss/*"
+        "./src/scss/*"
       ]
     }
   },

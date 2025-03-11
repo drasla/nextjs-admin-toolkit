@@ -1,11 +1,11 @@
-import Accordion from "./accordion";
-import Error from "./error";
-import Header from "./header";
-import HTML from "./html";
-import Panel from "./panel";
-import Partition from "./partition";
-import Title from "./title";
-export declare const Layout: {
+import Accordion from "../layout/accordion";
+import Error from "../layout/error";
+import Header from "../layout/header";
+import HTML from "../layout/html";
+import Panel from "../layout/panel";
+import Partition from "../layout/partition";
+import Title from "../layout/title";
+declare const _default: {
     Partition: typeof Partition;
     Accordion: typeof Accordion;
     Panel: typeof Panel;
@@ -14,3 +14,4 @@ export declare const Layout: {
     HTML: typeof HTML;
     Header: typeof Header;
 };
+export default _default;

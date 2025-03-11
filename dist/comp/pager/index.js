@@ -1,2 +1,3 @@
-import Base from "./base";
-export const Pager = { Base };
+import Base from "../pager/base";
+export default { Base };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvY29tcC9wYWdlci9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLElBQUksTUFBTSxrQkFBa0IsQ0FBQztBQUVwQyxlQUFlLEVBQUMsSUFBSSxFQUFDLENBQUMifQ==

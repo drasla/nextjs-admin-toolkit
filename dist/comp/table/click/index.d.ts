@@ -1,5 +1,5 @@
+import { TableItem } from "../../table/types";
 import { MouseEventHandler } from "react";
-import { TableItem } from "../types";
 type Props<T> = {
     items: TableItem<T>[];
     className?: string;

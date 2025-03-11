@@ -1,4 +1,5 @@
-import ConfirmButton from "./confirm-button";
-import Field from "./field";
-import Input from "./input";
-export const Form = { ConfirmButton, Field, Input };
+import ConfirmButton from "../form/confirm-button";
+import Field from "../form/field";
+import Input from "../form/input";
+export default { ConfirmButton, Field, Input };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvY29tcC9mb3JtL2luZGV4LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sYUFBYSxNQUFNLDJCQUEyQixDQUFDO0FBQ3RELE9BQU8sS0FBSyxNQUFNLGtCQUFrQixDQUFDO0FBQ3JDLE9BQU8sS0FBSyxNQUFNLGtCQUFrQixDQUFDO0FBRXJDLGVBQWUsRUFBQyxhQUFhLEVBQUUsS0FBSyxFQUFFLEtBQUssRUFBQyxDQUFDIn0=

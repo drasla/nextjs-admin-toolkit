@@ -1,4 +1,4 @@
-import { TableItem } from "../types";
+import { TableItem } from "../../table/types";
 type Props<T> = {
     items: TableItem<T>[];
     className?: string;

@@ -1,4 +1,4 @@
-import { ModalBackdropProps } from "../backdrop";
+import { ModalBackdropProps } from "../../modal/backdrop";
 type Props = {
     disableCloseButton?: boolean;
 } & ModalBackdropProps;

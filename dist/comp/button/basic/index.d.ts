@@ -1,5 +1,5 @@
+import { ButtonStyles } from "../../button/types";
 import { MouseEventHandler, ReactNode } from "react";
-import { ButtonStyles } from "../types";
 type Props = {
     icon?: string;
     type?: "submit" | "reset" | "button";

@@ -1,11 +1,11 @@
-import Base from "./base";
-import Header from "./header";
-import Id from "./id";
-import Ip from "./ip";
-import Name from "./name";
-import Text from "./text";
-import Time from "./time";
-export declare const Unit: {
+import Base from "../unit/base";
+import Header from "../unit/header";
+import Id from "../unit/id";
+import Ip from "../unit/ip";
+import Name from "../unit/name";
+import Text from "../unit/text";
+import Time from "../unit/time";
+declare const _default: {
     Base: typeof Base;
     Header: typeof Header;
     Id: typeof Id;
@@ -14,3 +14,4 @@ export declare const Unit: {
     Text: typeof Text;
     Time: typeof Time;
 };
+export default _default;

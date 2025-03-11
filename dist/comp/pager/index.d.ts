@@ -1,4 +1,5 @@
-import Base from "./base";
-export declare const Pager: {
+import Base from "../pager/base";
+declare const _default: {
     Base: typeof Base;
 };
+export default _default;

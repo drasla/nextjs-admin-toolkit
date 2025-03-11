@@ -1,20 +1,18 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
     "jsx": "react-jsx",
     "noEmit": false,
     "removeComments": true,
     "declaration": true,
+    "inlineSourceMap": true,
     "outDir": "./dist"
   },
   "include": [
-    "./comp/**/*.ts",
-    "./comp/**/*.tsx",
-    "./index.ts"
+    "./src"
   ],
   "exclude": [
     "node_modules",
-    "./src"
+    "./src/app"
   ]
 }

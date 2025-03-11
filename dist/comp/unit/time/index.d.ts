@@ -1,4 +1,4 @@
-import { PrintBaseProps } from "../base";
+import { PrintBaseProps } from "../../unit/base";
 type Props = Pick<PrintBaseProps, "className" | "children" | "align" | "copy" | "ellipsis" | "length"> & {
     timezone?: string;
     hideTime?: boolean;

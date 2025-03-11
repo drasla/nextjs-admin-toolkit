@@ -1,4 +1,4 @@
-export declare const Asset: {
+declare const _default: {
     svg: {
         copy: any;
         id: any;
@@ -12,3 +12,4 @@ export declare const Asset: {
         plus: any;
     };
 };
+export default _default;
