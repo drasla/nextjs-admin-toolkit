@@ -7,7 +7,7 @@ import React, {MouseEventHandler, ReactNode, useState} from "react";
 
 type Props = {
 	form: Nullable<HTMLFormElement>;
-	onConfirm: () => void;
+	onConfirm?: () => void;
 	pending: boolean;
 	buttonStyle?: ButtonStyles;
 	buttonText?: string;
@@ -39,7 +39,7 @@ export default function ({
 
 		if (!form) return;
 		form.requestSubmit();
-		onConfirm();
+		if (onConfirm) onConfirm();
 		setOpen(false);
 	};
 

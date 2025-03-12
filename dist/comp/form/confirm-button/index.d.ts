@@ -3,7 +3,7 @@ import { Nullable } from "nextjs-tools";
 import { ReactNode } from "react";
 type Props = {
     form: Nullable<HTMLFormElement>;
-    onConfirm: () => void;
+    onConfirm?: () => void;
     pending: boolean;
     buttonStyle?: ButtonStyles;
     buttonText?: string;
