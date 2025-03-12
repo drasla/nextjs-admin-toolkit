@@ -1,5 +1,6 @@
 #!/bin/zsh
 
+pnpm up
 rm -rf "./dist"
 mkdir ./dist
 cp ./module.d.ts ./dist/

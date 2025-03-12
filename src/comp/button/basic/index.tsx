@@ -19,13 +19,13 @@ export default function ({icon, children, className, type, style, disabled, onCl
 	return (
 		<button
 			{...{onClick, type, disabled}}
-			className={fnCss.concat("button", style, className)}>
+			className={fnCss.concat("button flex items-center justify-center", style, className)}>
 			{icon && (
 				<Image
-					className={"mb-3"}
+					className="mr-1"
 					src={icon}
-					width={16}
-					height={16}
+					width={20}
+					height={20}
 					alt={"icon"}
 				/>
 			)}

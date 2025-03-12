@@ -15,7 +15,7 @@ export default function ({icon, children, href, style, className}: Props) {
 	style = style || "normal";
 	return (
 		<Link href={href}>
-			<div className={fnCss.concat("button", style, className, "flex items-center justify-center")}>
+			<div className={fnCss.concat("button flex items-center justify-center", style, className)}>
 				{icon && (
 					<Image
 						className={"mr-1"}

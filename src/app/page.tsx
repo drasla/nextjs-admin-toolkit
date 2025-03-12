@@ -47,7 +47,14 @@ export default function ({}: NextPageProps) {
 					total={1000}
 				/>
 
-				<Button.Basic>Button</Button.Basic>
+				<Table.List
+					className="mb-4"
+					emptyMessage={""}
+					list={[]}
+					items={[]}
+				/>
+
+				<Button.Basic icon={Asset.svg.plus}>Button</Button.Basic>
 				<Button.Basic style="primary">Button</Button.Basic>
 				<Form.Input
 					{...sampleForm.password}

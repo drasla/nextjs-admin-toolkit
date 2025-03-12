@@ -1,14 +1,16 @@
 import TableBase from "@comp/table/base";
 import {TableItem} from "@comp/table/types";
 import {fnCss} from "nextjs-tools";
+import {ReactNode} from "react";
 
 type Props<T> = {
 	items: TableItem<T>[];
 	className?: string;
 	list: T[];
+	emptyMessage?: ReactNode;
 };
 
-export default function <T>({items, className, list}: Readonly<Props<T>>) {
+export default function <T>({items, className, list, emptyMessage}: Readonly<Props<T>>) {
 	return (
 		<>
 			<TableBase.Header {...{items, className}} />
@@ -19,6 +21,7 @@ export default function <T>({items, className, list}: Readonly<Props<T>>) {
 					{<TableBase.Row {...{row, items}} />}
 				</div>
 			))}
+			{list.length === 0 && <TableBase.Empty>{emptyMessage}</TableBase.Empty>}
 			<TableBase.Closer {...{className}} />
 		</>
 	);

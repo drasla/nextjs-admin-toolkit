@@ -2,16 +2,17 @@
 import TableBase from "@comp/table/base";
 import {TableItem} from "@comp/table/types";
 import {fnCss} from "nextjs-tools";
-import {MouseEvent} from "react";
+import {MouseEvent, ReactNode} from "react";
 
 type Props<T> = {
 	items: TableItem<T>[];
 	className?: string;
 	list: T[];
 	onClick: (event: MouseEvent<HTMLDivElement>, row: T) => void;
+	emptyMessage?: ReactNode;
 };
 
-export default function <T>({items, className, list, onClick}: Readonly<Props<T>>) {
+export default function <T>({items, className, list, onClick, emptyMessage}: Readonly<Props<T>>) {
 	return (
 		<div className={className}>
 			<TableBase.Header {...{items}} />
@@ -23,6 +24,7 @@ export default function <T>({items, className, list, onClick}: Readonly<Props<T>
 					{<TableBase.Row {...{row, items}} />}
 				</div>
 			))}
+			{list.length === 0 && <TableBase.Empty>emptyMessage</TableBase.Empty>}
 			<TableBase.Closer />
 		</div>
 	);
