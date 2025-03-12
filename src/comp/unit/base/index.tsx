@@ -31,7 +31,7 @@ export default function ({icon, className, children, align, copy, ellipsis, leng
 	};
 
 	return (
-		<div className={fnCss.concat("no-drag flex items-center", "unit-value", align, className)}>
+		<div className={fnCss.concat("flex items-center", "unit-value", align, className)}>
 			{icon && (
 				<Image
 					className={fnCss.concat("mr-1 pt-1/2", "unit-icon")}
