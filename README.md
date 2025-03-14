@@ -14,6 +14,10 @@
     import "nextjs-admin-toolkit/asset/scsss/index.scss";
 ~~~
 
+# 해야 할 것
+
+* tsc-alias 에서 ts, tsx 이외의 import 된 파일은 자동으로 변경해주지 않는다. 해결책 찾아보기
+
 # tag 명명법
 
 ### major.minor.patch
