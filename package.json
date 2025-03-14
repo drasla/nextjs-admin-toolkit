@@ -1,10 +1,11 @@
 {
   "name": "nextjs-admin-toolkit",
+  "version": "0.0.19",
   "scripts": {
     "dev": "source .env && PORT=$PORT NODE_OPTIONS='--inspect --enable-source-maps=true' next dev --turbopack",
     "export": "sh ./script/build.sh",
-    "tag": "sh ./script/tag.sh $(cat ./version)",
-    "css": "tailwindcss -o ./src/scss/tailwind.css --watch"
+    "tag": "sh ./script/tag.sh $(jq \".version\" package.json | tr -d '\"')",
+    "css": "tailwindcss -o asset/scss/tailwind.css --watch"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

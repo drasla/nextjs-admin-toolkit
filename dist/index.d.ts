@@ -1,5 +1,5 @@
-import Asset from "./asset";
 import Action from "./comp/action";
+import Asset from "./comp/asset";
 import Button from "./comp/button";
 import Form from "./comp/form";
 import Layout from "./comp/layout";

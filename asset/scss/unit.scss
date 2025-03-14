@@ -1,0 +1,18 @@
+html {
+  --color-unit: #656565;
+  --color-unit-icon: #2a85ff;
+  --filter-unit-icon: brightness(0) saturate(100%) invert(41%) sepia(17%) saturate(6653%) hue-rotate(202deg) brightness(104%) contrast(102%);
+}
+
+.unit-icon {
+  filter: var(--filter-unit-icon);
+}
+
+.unit-value {
+  color: var(--color-unit);
+}
+
+.unit-copy:hover {
+  text-decoration: underline;
+  cursor: copy;
+}

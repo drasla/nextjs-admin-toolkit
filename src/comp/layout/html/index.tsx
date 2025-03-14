@@ -1,7 +1,7 @@
 import {PropsChildren} from "@comp/types";
 import {Viewport} from "next";
 import {fnEnv} from "nextjs-tools";
-import "@scss/index.scss";
+import "@asset/scss/index.scss";
 
 export const viewport: Viewport = {
 	width: "device-width",

@@ -1,4 +1,4 @@
-import Asset from "@asset";
+import Asset from "@comp/asset";
 import Backdrop, {ModalBackdropProps} from "@comp/modal/backdrop";
 import Image from "next/image";
 import {fnCss} from "nextjs-tools";

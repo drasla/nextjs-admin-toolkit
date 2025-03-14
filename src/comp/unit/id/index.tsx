@@ -1,4 +1,4 @@
-import Asset from "@asset";
+import Asset from "@comp/asset";
 import Base, {PrintBaseProps} from "@comp/unit/base";
 import React from "react";
 

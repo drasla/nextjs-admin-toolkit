@@ -47,13 +47,6 @@ export default function ({}: NextPageProps) {
 					total={1000}
 				/>
 
-				<Table.List
-					className="mb-4"
-					emptyMessage={""}
-					list={[]}
-					items={[]}
-				/>
-
 				<Button.Basic icon={Asset.svg.plus}>Button</Button.Basic>
 				<Button.Basic style="primary">Button</Button.Basic>
 				<Form.Input
@@ -65,6 +58,21 @@ export default function ({}: NextPageProps) {
 					{...sampleForm.password}
 					label="password"
 					readOnly
+				/>
+			</Layout.Panel>
+
+			<Layout.Panel>
+				<Layout.Title>Empty list</Layout.Title>
+				<Table.List
+					className="mb-4"
+					list={[]}
+					items={[
+						{
+							name: "table",
+							className: "w-full",
+							parser: (_) => <Unit.Id>id</Unit.Id>,
+						},
+					]}
 				/>
 			</Layout.Panel>
 		</Layout.Partition>

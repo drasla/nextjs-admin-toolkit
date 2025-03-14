@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 type Props = {
     icon?: string;
     href: string;
@@ -6,5 +6,5 @@ type Props = {
     children?: ReactNode;
     style?: "normal" | "primary";
 };
-export default function ({ icon, children, href, style, className }: Props): import("react/jsx-runtime").JSX.Element;
+export default function ({ icon, children, href, style, className }: Props): React.JSX.Element;
 export {};

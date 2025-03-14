@@ -1,5 +1,6 @@
+import React from "react";
 type Props = {
     error?: Error;
 };
-export default function ({ error }: Props): import("react/jsx-runtime").JSX.Element | null;
+export default function ({ error }: Props): React.JSX.Element | null;
 export {};

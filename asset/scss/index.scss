@@ -1,0 +1,24 @@
+@use "tailwind.css";
+@use "tailwindcss";
+@use "variables";
+@use "input";
+@use "h";
+@use "table";
+@use "button";
+@use "accordion";
+@use "panel";
+@use "partition";
+@use "modal";
+@use "pager";
+@use "unit";
+
+* {
+  box-sizing: border-box;
+}
+
+.no-drag {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

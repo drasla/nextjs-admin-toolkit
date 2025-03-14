@@ -1,5 +1,5 @@
 import { ButtonStyles } from "../../button/types";
-import { MouseEventHandler, ReactNode } from "react";
+import React, { MouseEventHandler, ReactNode } from "react";
 type Props = {
     icon?: string;
     type?: "submit" | "reset" | "button";
@@ -9,5 +9,5 @@ type Props = {
     disabled?: boolean;
     onClick?: MouseEventHandler<HTMLButtonElement>;
 };
-export default function ({ icon, children, className, type, style, disabled, onClick }: Props): import("react/jsx-runtime").JSX.Element;
+export default function ({ icon, children, className, type, style, disabled, onClick }: Props): React.JSX.Element;
 export {};

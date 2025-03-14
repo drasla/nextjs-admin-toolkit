@@ -1,7 +1,7 @@
-import { ReactNode } from "react";
+import React, { ReactNode } from "react";
 type Props = {
     className?: string;
     children?: ReactNode;
 };
-export default function ({ children, className }: Props): import("react/jsx-runtime").JSX.Element;
+export default function ({ children, className }: Props): React.JSX.Element;
 export {};

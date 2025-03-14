@@ -1,0 +1,50 @@
+html {
+  --color-side-nav-title: #717171;
+  --color-side-nav-font: #717171;
+  --color-side-nav-font-hover: #555555;
+  --color-side-nav-font-active: #2a85ff;
+  --color-side-nav-hover: #f4f4f4;
+  --color-side-nav-active: #2a85ff1a;
+  --filter-side-nav-icon: brightness(0) saturate(100%) invert(50%) sepia(0%) saturate(1100%) hue-rotate(150deg) brightness(87%) contrast(90%);;
+  --filter-side-nav-icon-active: brightness(0) saturate(100%) invert(42%) sepia(83%) saturate(2517%) hue-rotate(200deg) brightness(101%) contrast(101%);;
+}
+
+
+.accordion-item {
+  cursor: pointer;
+  border-radius: 0.5rem;
+
+  div {
+    color: var(--color-side-nav-font);
+  }
+}
+
+.accordion-item:hover {
+  background-color: var(--color-side-nav-hover);
+
+  div {
+    color: var(--color-side-nav-font-hover);
+    font-weight: 700;
+  }
+}
+
+.accordion-item.active {
+  background-color: var(--color-side-nav-active);
+
+  div {
+    color: var(--color-side-nav-font-active);
+    font-weight: 700;
+  }
+}
+
+.accordion-icon {
+  filter: var(--sise-nav-icon-filter)
+}
+
+.accordion-icon.active {
+  filter: var(--filter-side-nav-icon-active);
+}
+
+.accordion-title {
+  color: var(--color-side-nav-title);
+}

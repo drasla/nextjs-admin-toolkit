@@ -7,5 +7,5 @@ type Props<T> = {
     onClick: (event: MouseEvent<HTMLDivElement>, row: T) => void;
     emptyMessage?: ReactNode;
 };
-export default function <T>({ items, className, list, onClick, emptyMessage }: Readonly<Props<T>>): import("react/jsx-runtime").JSX.Element;
+export default function <T>({ items, className, list, onClick, emptyMessage }: Readonly<Props<T>>): import("react").JSX.Element;
 export {};

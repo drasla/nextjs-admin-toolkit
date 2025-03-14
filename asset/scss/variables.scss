@@ -1,0 +1,30 @@
+html {
+  --color-body: #fff;
+  --color-content-background: #f1f1f1;
+  --color-panel-border: #d8d8d8;
+  --color-text: #919191;
+  --color-header: #373737;
+
+  --primary: #2a85ff;
+  --primary-hover: #4996ff;
+  --primary-active: #2b7eef;
+  --primary-font: #ffffff;
+
+  --warning: #ff6a55;
+}
+
+html.dark {
+  --color-body: #fff;
+}
+
+.color-text {
+  color: var(--color-text);
+}
+
+.color-header {
+  color: var(--color-header);
+}
+
+.color-warning {
+  color: var(--warning);
+}

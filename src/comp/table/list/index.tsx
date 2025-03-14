@@ -12,17 +12,17 @@ type Props<T> = {
 
 export default function <T>({items, className, list, emptyMessage}: Readonly<Props<T>>) {
 	return (
-		<>
-			<TableBase.Header {...{items, className}} />
+		<div className={className}>
+			<TableBase.Header {...{items}} />
 			{list.map((row, key) => (
 				<div
-					className={fnCss.concat(`flex`, "table-top-border table-content hover", className)}
+					className={fnCss.concat(`flex`, "table-top-border table-content hover")}
 					key={key}>
 					{<TableBase.Row {...{row, items}} />}
 				</div>
 			))}
 			{list.length === 0 && <TableBase.Empty>{emptyMessage}</TableBase.Empty>}
-			<TableBase.Closer {...{className}} />
-		</>
+			<TableBase.Closer />
+		</div>
 	);
 }

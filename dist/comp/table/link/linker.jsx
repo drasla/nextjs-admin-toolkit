@@ -1,0 +1,14 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { fnCss } from "nextjs-tools";
+export default function ({ children, href, className }) {
+    const router = useRouter();
+    return (<div className={fnCss.concat(`flex`, "table-top-border table-content hover", className)} onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault();
+            router.push(href);
+        }}>
+			{children}
+		</div>);
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibGlua2VyLmpzeCIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uLy4uLy4uLy4uL3NyYy9jb21wL3RhYmxlL2xpbmsvbGlua2VyLnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxZQUFZLENBQUM7QUFDYixPQUFPLEVBQUMsU0FBUyxFQUFDLE1BQU0saUJBQWlCLENBQUM7QUFDMUMsT0FBTyxFQUFDLEtBQUssRUFBQyxNQUFNLGNBQWMsQ0FBQztBQVNuQyxNQUFNLENBQUMsT0FBTyxXQUFXLEVBQUMsUUFBUSxFQUFFLElBQUksRUFBRSxTQUFTLEVBQWtCO0lBQ3BFLE1BQU0sTUFBTSxHQUFHLFNBQVMsRUFBRSxDQUFDO0lBQzNCLE9BQU8sQ0FDTixDQUFDLEdBQUcsQ0FDSCxTQUFTLENBQUMsQ0FBQyxLQUFLLENBQUMsTUFBTSxDQUFDLE1BQU0sRUFBRSxzQ0FBc0MsRUFBRSxTQUFTLENBQUMsQ0FBQyxDQUNuRixPQUFPLENBQUMsQ0FBQyxDQUFDLENBQUMsRUFBRSxFQUFFO1lBQ2QsQ0FBQyxDQUFDLGVBQWUsRUFBRSxDQUFDO1lBQ3BCLENBQUMsQ0FBQyxjQUFjLEVBQUUsQ0FBQztZQUNuQixNQUFNLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxDQUFDO1FBQ25CLENBQUMsQ0FBQyxDQUNGO0dBQUEsQ0FBQyxRQUFRLENBQ1Y7RUFBQSxFQUFFLEdBQUcsQ0FBQyxDQUNOLENBQUM7QUFDSCxDQUFDIn0=

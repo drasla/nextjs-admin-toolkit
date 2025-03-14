@@ -34,16 +34,16 @@
         "./src/comp/*"
       ],
       "@asset/*": [
-        "./src/asset/*"
+        "./asset/*"
       ],
       "@asset": [
-        "./src/asset"
+        "./asset"
       ],
       "@scss": [
-        "./src/scss"
+        "./asset/scss"
       ],
       "@scss/*": [
-        "./src/scss/*"
+        "./asset/scss/*"
       ],
       "@dist/*": [
         "./dist/*"
