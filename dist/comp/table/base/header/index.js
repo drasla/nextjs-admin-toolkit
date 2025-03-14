@@ -1,0 +1,6 @@
+import { jsx as _jsx } from "react/jsx-runtime";
+import { fnCss } from "nextjs-tools";
+export default function ({ items, className }) {
+    return (_jsx("div", { className: fnCss.concat("flex font-bold", "table-top-border table-content", className), children: items.map((v, i) => (_jsx("div", { className: fnCss.concat("p-3", "table-header text-center", v.className), children: v.name }, i))) }));
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi8uLi9zcmMvY29tcC90YWJsZS9iYXNlL2hlYWRlci9pbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUNBLE9BQU8sRUFBQyxLQUFLLEVBQUMsTUFBTSxjQUFjLENBQUM7QUFPbkMsTUFBTSxDQUFDLE9BQU8sV0FBYyxFQUFDLEtBQUssRUFBRSxTQUFTLEVBQXFCO0lBQ2pFLE9BQU8sQ0FDTixjQUFLLFNBQVMsRUFBRSxLQUFLLENBQUMsTUFBTSxDQUFDLGdCQUFnQixFQUFFLGdDQUFnQyxFQUFFLFNBQVMsQ0FBQyxZQUN6RixLQUFLLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQyxFQUFFLENBQUMsRUFBRSxFQUFFLENBQUMsQ0FDcEIsY0FFQyxTQUFTLEVBQUUsS0FBSyxDQUFDLE1BQU0sQ0FBQyxLQUFLLEVBQUUsMEJBQTBCLEVBQUUsQ0FBQyxDQUFDLFNBQVMsQ0FBQyxZQUN0RSxDQUFDLENBQUMsSUFBSSxJQUZGLENBQUMsQ0FHRCxDQUNOLENBQUMsR0FDRyxDQUNOLENBQUM7QUFDSCxDQUFDIn0=

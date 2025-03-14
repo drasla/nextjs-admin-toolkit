@@ -1,5 +1,4 @@
 import { PrintBaseProps } from "../../unit/base";
-import React from "react";
 type Props = Pick<PrintBaseProps, "className" | "children" | "align" | "copy" | "ellipsis" | "length">;
-export default function (props: Props): React.JSX.Element;
+export default function (props: Props): import("react/jsx-runtime").JSX.Element;
 export {};

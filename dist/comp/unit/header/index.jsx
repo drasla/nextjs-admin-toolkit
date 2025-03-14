@@ -1,7 +1,0 @@
-import Base from "../../unit/base";
-import { fnCss } from "nextjs-tools";
-import React from "react";
-export default function (props) {
-    return (<Base {...props} className={fnCss.concat(props.className, "font-bold")}/>);
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanN4Iiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vLi4vLi4vc3JjL2NvbXAvdW5pdC9oZWFkZXIvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sSUFBc0IsTUFBTSxpQkFBaUIsQ0FBQztBQUNyRCxPQUFPLEVBQUMsS0FBSyxFQUFDLE1BQU0sY0FBYyxDQUFDO0FBQ25DLE9BQU8sS0FBSyxNQUFNLE9BQU8sQ0FBQztBQUkxQixNQUFNLENBQUMsT0FBTyxXQUFXLEtBQVk7SUFDcEMsT0FBTyxDQUNOLENBQUMsSUFBSSxDQUNKLElBQUksS0FBSyxDQUFDLENBQ1YsU0FBUyxDQUFDLENBQUMsS0FBSyxDQUFDLE1BQU0sQ0FBQyxLQUFLLENBQUMsU0FBUyxFQUFFLFdBQVcsQ0FBQyxDQUFDLEVBQ3JELENBQ0YsQ0FBQztBQUNILENBQUMifQ==

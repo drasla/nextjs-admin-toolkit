@@ -6,5 +6,5 @@ type Props<T> = {
     list: T[];
     emptyMessage?: ReactNode;
 };
-export default function <T>({ items, className, list, emptyMessage }: Readonly<Props<T>>): import("react").JSX.Element;
+export default function <T>({ items, className, list, emptyMessage }: Readonly<Props<T>>): import("react/jsx-runtime").JSX.Element;
 export {};

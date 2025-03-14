@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 type Props = {
     items: AccordionItem[];
     children?: ReactNode;
@@ -16,5 +16,5 @@ export type AccordionSubmenu = {
     href: string;
     prefix: string;
 };
-export default function ({ items, children }: Props): React.JSX.Element;
+export default function ({ items, children }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

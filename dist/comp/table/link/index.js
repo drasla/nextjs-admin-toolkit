@@ -1,0 +1,7 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import TableBase from "../../table/base";
+import Linker from "../../table/link/linker";
+export default function ({ items, className, list, linker, emptyMessage }) {
+    return (_jsxs("div", { className: className, children: [_jsx(TableBase.Header, { items }), list.map((row, key) => (_jsx(Linker, { href: linker(row), children: _jsx(TableBase.Row, { row, items }) }, key))), list.length === 0 && _jsx(TableBase.Empty, { children: emptyMessage }), _jsx(TableBase.Closer, {})] }));
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvY29tcC90YWJsZS9saW5rL2luZGV4LnRzeCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUEsT0FBTyxTQUFTLE1BQU0sa0JBQWtCLENBQUM7QUFDekMsT0FBTyxNQUFNLE1BQU0seUJBQXlCLENBQUM7QUFZN0MsTUFBTSxDQUFDLE9BQU8sV0FBYyxFQUFDLEtBQUssRUFBRSxTQUFTLEVBQUUsSUFBSSxFQUFFLE1BQU0sRUFBRSxZQUFZLEVBQXFCO0lBQzdGLE9BQU8sQ0FDTixlQUFLLFNBQVMsRUFBRSxTQUFTLGFBQ3hCLEtBQUMsU0FBUyxDQUFDLE1BQU0sSUFBTSxLQUFLLEdBQUssRUFDaEMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLEdBQUcsRUFBRSxHQUFHLEVBQUUsRUFBRSxDQUFDLENBQ3ZCLEtBQUMsTUFBTSxJQUVOLElBQUksRUFBRSxNQUFNLENBQUMsR0FBRyxDQUFDLFlBQ2hCLEtBQUMsU0FBUyxDQUFDLEdBQUcsSUFBTSxHQUFHLEVBQUUsS0FBSyxHQUFLLElBRi9CLEdBQUcsQ0FHQSxDQUNULENBQUMsRUFFRCxJQUFJLENBQUMsTUFBTSxLQUFLLENBQUMsSUFBSSxLQUFDLFNBQVMsQ0FBQyxLQUFLLGNBQUUsWUFBWSxHQUFtQixFQUN2RSxLQUFDLFNBQVMsQ0FBQyxNQUFNLEtBQUcsSUFDZixDQUNOLENBQUM7QUFDSCxDQUFDIn0=
