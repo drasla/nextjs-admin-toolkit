@@ -40,7 +40,7 @@
         "./asset"
       ],
       "@scss": [
-        "./asset/scss"
+        "./asset/scss/index.scss"
       ],
       "@scss/*": [
         "./asset/scss/*"
