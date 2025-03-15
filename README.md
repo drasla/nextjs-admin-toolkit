@@ -6,14 +6,6 @@
 * $ROOT/asset 의 경우 컴파일 할 코드(ts, tsx)가 아닌 대상만 저장한다.
 * tag 업데이트시 package.json 의 version 과 동기화 되므로 주의 하기. 커밋 전에 수정해야 한다.
 
-# 사용시 주의사항
-
-* root.layout 에서 스타일 추가해 주어야 한다.
-
-~~~javascript
-    import "nextjs-admin-toolkit/asset/scsss/index.scss";
-~~~
-
 # 해야 할 것
 
 * tsc-alias 에서 ts, tsx 이외의 import 된 파일은 자동으로 변경해주지 않는다. 해결책 찾아보기

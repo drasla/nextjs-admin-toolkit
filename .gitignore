@@ -9,8 +9,11 @@
 # idea run
 .run
 
+# private
+private*
+
 # mac
-DS_Store
+.DS_Store
 
 # env
 .env

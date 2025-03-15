@@ -14,11 +14,12 @@
     "url": "https://github.com/d3v-friends/nextjs-admin-toolkit"
   },
   "dependencies": {
+    "@react-spring/web": "9.7.5",
     "luxon": "3.5.0",
     "next": "15.2.1",
     "nextjs-tools": "github:d3v-friends/nextjs-tools#0.1.11",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
     "tailwindcss": "4.0.12"
   },
   "devDependencies": {

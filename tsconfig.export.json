@@ -9,11 +9,13 @@
     "outDir": "./dist"
   },
   "include": [
-    "./src"
+    "./src/comp",
+    "./src/index.ts"
   ],
   "exclude": [
     "node_modules",
-    "./src/app"
+    "./src/app",
+    "./src/var"
   ],
   "tsc-alias": {
     "verbose": true

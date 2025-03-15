@@ -1,6 +1,7 @@
 import {sampleForm} from "@app/form";
 import {AccordionItem} from "@comp/layout/accordion";
 import {Asset, Button, Form, Layout, Pager, Table, Unit} from "@src";
+import Routers from "@var/routers";
 import {NextPageProps} from "nextjs-tools";
 
 export default function ({}: NextPageProps) {
@@ -47,8 +48,8 @@ export default function ({}: NextPageProps) {
 					total={1000}
 				/>
 
-				<Button.Basic icon={Asset.svg.plus}>Button</Button.Basic>
-				<Button.Basic style="primary">Button</Button.Basic>
+				<Button.Base iconSrc={Asset.svg.plus}>Button</Button.Base>
+				<Button.Base buttonStyle="primary">Button</Button.Base>
 				<Form.Input
 					{...sampleForm.password}
 					label="password"
@@ -88,19 +89,19 @@ const list: {name: string; age: number}[] = [
 
 const items: AccordionItem[] = [
 	{
-		title: "시스템관리",
+		title: "컴포넌트",
 		submenu: [
 			{
-				title: "서버",
+				title: "홈",
 				icon: Asset.svg.name,
-				href: "/server",
-				prefix: "/",
+				href: Routers.home.prefix,
+				prefix: Routers.home.prefix,
 			},
 			{
-				title: "레지스트리",
+				title: "버튼",
 				icon: Asset.svg.name,
-				href: "/registry",
-				prefix: "/registry",
+				href: Routers.button.prefix,
+				prefix: Routers.button.prefix,
 			},
 		],
 	},

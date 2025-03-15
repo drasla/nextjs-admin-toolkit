@@ -7,6 +7,7 @@ import Modal from "@comp/modal";
 import Pager from "@comp/pager";
 import Table from "@comp/table";
 import Unit from "@comp/unit";
+import Widget from "@comp/widget";
 
-export {Action, Button, Form, Layout, Modal, Pager, Table, Unit, Asset};
+export {Action, Button, Form, Layout, Modal, Pager, Table, Unit, Asset, Widget};
 export type * from "@comp/types";
