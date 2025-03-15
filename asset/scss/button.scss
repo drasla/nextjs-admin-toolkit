@@ -16,6 +16,7 @@ html.dark {
 .button {
   border-width: 2px;
   border-color: transparent;
+  overflow: hidden;
 
   &:hover {
     filter: var(--button-hover-filter);

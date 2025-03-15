@@ -28,7 +28,7 @@ export default function ({}: NextPageProps) {
 			<Button.Base iconSrc={Asset.svg.id}>ID</Button.Base>
 			<Button.Base>ID</Button.Base>
 
-			<div className="mb-20 mt-5 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						key={i}
@@ -40,7 +40,7 @@ export default function ({}: NextPageProps) {
 			</div>
 
 			<h4>With icon</h4>
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						iconSrc={Asset.svg.id}
@@ -53,7 +53,7 @@ export default function ({}: NextPageProps) {
 			</div>
 
 			<h4>Rounded</h4>
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						key={i}
@@ -67,7 +67,7 @@ export default function ({}: NextPageProps) {
 			</div>
 
 			<h4>Outlined</h4>
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						key={i}
@@ -80,7 +80,7 @@ export default function ({}: NextPageProps) {
 			</div>
 
 			<h4>Rounded outlined</h4>
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						iconSrc={Asset.svg.id}
@@ -111,12 +111,12 @@ export default function ({}: NextPageProps) {
 			</div>
 
 			<h4>Link</h4>
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				<Button.Base href="/">HOME</Button.Base>
 			</div>
 
 			<h4>Disabled</h4>
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						iconSrc={Asset.svg.id}
@@ -131,7 +131,7 @@ export default function ({}: NextPageProps) {
 				))}
 			</div>
 
-			<div className="mb-20 grid grid-cols-4 gap-4">
+			<div className="mb-20 mt-5 grid grid-cols-2 lg:grid-cols-4 gap-4">
 				{buttonStyles.map((v, i) => (
 					<Button.Base
 						iconSrc={Asset.svg.id}

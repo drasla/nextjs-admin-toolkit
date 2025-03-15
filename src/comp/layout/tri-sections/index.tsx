@@ -1,3 +1,4 @@
+import SideNav from "@comp/layout/tri-sections/side-nav";
 import {fnCss} from "nextjs-tools";
 import React, {ReactNode} from "react";
 
@@ -19,6 +20,7 @@ export default function ({top, side, children}: Readonly<Props>) {
 				{side}
 			</div>
 			<div className={fnCss.concat("fixed z-1 top-0", "w-full left-0 lg:left-1/5 lg:w-4/5", "partition-top-nav")}>
+				<SideNav />
 				{top}
 			</div>
 			<div
