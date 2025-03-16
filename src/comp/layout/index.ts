@@ -8,4 +8,6 @@ import TriSections from "@comp/layout/tri-sections";
 import Panel from "@comp/widget/panel";
 import Title from "@comp/widget/title";
 
+export * from "@comp/layout/tri-sections/types";
+
 export default {Partition, Accordion, Panel, Title, Error, HTML, Header, TriSections};

@@ -1,11 +1,4 @@
 html {
-  --color-body: #f1f1f1;
-  --color-content-background: #cfcfcf;
-  --color-border: #d8d8d8;
-
-  // nav
-  --color-nav: #fff;
-
   // colors
   --primary: rgba(113, 182, 249); // #71B6F9
   --primary-filter: invert(71%) sepia(36%) saturate(3649%) hue-rotate(185deg) brightness(106%) contrast(95%);
@@ -62,9 +55,4 @@ html {
   --blue-opposite: #fff;
   --blue-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
 
-}
-
-html.dark:root {
-  --color-body: #000;
-  --color-content-background: #333;
 }

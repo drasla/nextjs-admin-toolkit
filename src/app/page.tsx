@@ -6,16 +6,7 @@ import {NextPageProps} from "nextjs-tools";
 
 export default function ({}: NextPageProps) {
 	return (
-		<Layout.Partition
-			side={
-				<Layout.Accordion items={items}>
-					<Layout.Header
-						icon={Asset.svg.bag}
-						href={"/"}>
-						HQ-API
-					</Layout.Header>
-				</Layout.Accordion>
-			}>
+		<>
 			<Layout.Panel>
 				<Layout.Title>Title</Layout.Title>
 				<Table.Link
@@ -76,7 +67,7 @@ export default function ({}: NextPageProps) {
 					]}
 				/>
 			</Layout.Panel>
-		</Layout.Partition>
+		</>
 	);
 }
 

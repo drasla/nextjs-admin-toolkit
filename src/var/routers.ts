@@ -5,4 +5,7 @@ export default {
 	button: {
 		prefix: "/button",
 	},
+	table: {
+		prefix: "/table",
+	},
 };

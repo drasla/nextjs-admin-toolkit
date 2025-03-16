@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export default async function ({children}: PropsChildren) {
 	return (
 		<html lang={await fnEnv.server.string("HTML_LANG")}>
-			<body className="font-12 lg:font-16">{children}</body>
+			<body className="text-12 lg:text-16">{children}</body>
 		</html>
 	);
 }

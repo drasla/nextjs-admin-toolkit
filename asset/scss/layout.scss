@@ -1,3 +1,65 @@
-.tri-sections-side-nav-background {
-  background-color: #fff;
+$nav-height: 64px;
+
+html {
+  --tri-section-nav-background-color: #fff;
+  --tri-section-content-background-color: #f1f1f1;
+  --tri-section-border-color: #d8d8d8;
+  --tri-section-side-nav-color: #6e768e;
+  --tri-section-side-nav-filter: invert(46%) sepia(46%) saturate(182%) hue-rotate(187deg) brightness(90%) contrast(92%);
+}
+
+.tri-sections-nav-height {
+  height: $nav-height;
+}
+
+.tri-sections-top-nav {
+  height: $nav-height;
+  background-color: var(--tri-section-nav-background-color);
+  border-bottom: 1px solid var(--tri-section-border-color);
+}
+
+.tri-sections-content {
+  padding-top: $nav-height+16px;
+  background-color: var(--tri-section-content-background-color);
+}
+
+.tri-sections-side-nav {
+  border-right: 1px solid var(--tri-section-border-color);
+  background-color: var(--tri-section-nav-background-color);
+}
+
+.tri-sections-side-nav-color {
+  color: var(--tri-section-side-nav-color);
+
+  img {
+    filter: var(--tri-section-side-nav-filter);
+  }
+}
+
+.tri-sections-side-nav-color.hover:hover {
+  color: var(--primary);
+
+  img {
+    filter: var(--primary-filter);
+  }
+}
+
+
+.tri-sections-side-nav-color.active {
+  color: var(--primary);
+
+  img {
+    filter: var(--primary-filter);
+  }
+}
+
+.tri-sections-side-nav-alert {
+  min-width: 2rm;
+  border-radius: 2rem;
+  font-size: 0.6rem;
+}
+
+.tri-sections-side-nav-alert.primary {
+  background-color: var(--primary);
+  color: var(--primary-opposite);
 }

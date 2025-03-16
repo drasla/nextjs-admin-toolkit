@@ -48,7 +48,7 @@ export default function Component({open, children, onClose, disableEscapeKey, di
 	return (
 		<div
 			className={fnCss.concat(
-				"w-screen h-screen z-100 fixed left-0 top-0",
+				"w-full h-full z-100 fixed left-0 top-0",
 				"flex items-center justify-center",
 				"backdrop-blur-xs backdrop-grayscale-40",
 				"modal-background"
