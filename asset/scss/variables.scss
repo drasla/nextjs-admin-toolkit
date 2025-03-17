@@ -1,0 +1,22 @@
+html {
+  /* TODO: toolkit과 프로덕트의 스타일을 분리할 수 있지만 현재 정보 공유되지 않은 프로젝트 상 scss에 해당 내용을 유지함 */
+
+  --theme-border-color: #d8d8d8;
+  --theme-paper-color: #ffffff;
+  --theme-background-color: #f1f1f1;
+
+  --theme-sidebar-width: 288px;
+  --theme-header-height: 60px;
+}
+
+.themeBorder {
+  border-color: var(--theme-border-color);
+}
+
+.themeBackground {
+  background-color: var(--theme-background-color);
+}
+
+.themePaperColor {
+  background-color: var(--theme-paper-color);
+}

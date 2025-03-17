@@ -9,9 +9,11 @@ import name from "../.././../asset/svg/name.svg";
 import phone from "../.././../asset/svg/phone.svg";
 import plus from "../.././../asset/svg/plus.svg";
 import time from "../.././../asset/svg/time.svg";
+import barsStaggered from "../.././../asset/svg/bars-staggered.svg";
 
 export default {
 	svg: {
+		barsStaggered,
 		copy,
 		id,
 		time,
