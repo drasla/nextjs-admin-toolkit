@@ -32,7 +32,7 @@ export default function ({side, header, children}: Readonly<Props>) {
 					className={fnCss.concat(
 						"fixed top-0 left-0 z-10 md:z-0",
 						"w-[var(--theme-sidebar-width)] h-screen p-5 overflow-hidden overscroll-y-auto",
-						"themePaperColor border-r themeBorder",
+						"theme-paper-color border-r theme-border",
 						"transition-transform duration-300 ease transform -translate-x-[var(--theme-sidebar-width)] md:translate-x-0",
 						isOpen && "translate-x-0"
 					)}>
@@ -47,7 +47,7 @@ export default function ({side, header, children}: Readonly<Props>) {
 					)}>
 					{/* 헤더 */}
 					<div
-						className={fnCss.concat("sticky top-0", "w-full pl-5", "border-b themeBorder themePaperColor")}>
+						className={fnCss.concat("sticky top-0", "w-full pl-5", "border-b theme-border theme-paper-color")}>
 						<div className={fnCss.concat("flex items-center", "h-15")}>
 							<Image
 								className={fnCss.concat("md:hidden mr-5", "cursor-pointer")}
