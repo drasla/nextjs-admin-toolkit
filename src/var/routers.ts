@@ -8,4 +8,7 @@ export default {
 	table: {
 		prefix: "/table",
 	},
+	tooltip: {
+		prefix: "/tooltip",
+	},
 };

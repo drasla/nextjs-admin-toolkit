@@ -19,6 +19,12 @@ const SideNavItems: TriSectionAccordionItem[] = [
 				href: Routers.table.prefix,
 				title: "Table",
 			},
+			{
+				prefix: Routers.tooltip.prefix,
+				iconSrc: Asset.svg.id,
+				href: Routers.tooltip.prefix,
+				title: "Tooltip",
+			},
 		],
 	},
 ];
