@@ -1,6 +1,6 @@
 import React from "react";
 import {NextPageProps} from "nextjs-tools";
-import {Flat, Layout, Widget} from "@root";
+import {Flat, Panel, Widget} from "@root";
 
 const colors = [
 	"primary",
@@ -20,7 +20,7 @@ const {Button, Link} = Widget;
 
 export default function ({}: NextPageProps) {
 	return (
-		<Layout.Panel>
+		<Panel>
 			<h3 className="mb-5">Button</h3>
 			<h4 className="mb-5">filled square</h4>
 			<div className="grid grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-4 mb-10">
@@ -139,6 +139,6 @@ export default function ({}: NextPageProps) {
 				buttonSize="sm">
 				/table
 			</Link>
-		</Layout.Panel>
+		</Panel>
 	);
 }

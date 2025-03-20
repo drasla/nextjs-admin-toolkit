@@ -1,10 +1,10 @@
-import {Base, Dazzle, Flat, Layout} from "@root";
+import {Dazzle, Flat, HTML, Section3} from "@root";
 import {NextLayoutProps} from "nextjs-tools";
 
 export default async function ({children}: NextLayoutProps) {
 	return (
-		<Base.HTML>
-			<Layout.Section3
+		<HTML>
+			<Section3
 				top={"Top"}
 				header={{
 					iconSrc: Flat.MenuBurger,
@@ -30,7 +30,7 @@ export default async function ({children}: NextLayoutProps) {
 					},
 				]}>
 				{children}
-			</Layout.Section3>
-		</Base.HTML>
+			</Section3>
+		</HTML>
 	);
 }

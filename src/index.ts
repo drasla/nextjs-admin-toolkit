@@ -3,9 +3,15 @@ import Base from "./base";
 import Layout from "./layout";
 import Widget from "./widget";
 
+import {ReactNode} from "react";
+
 export {Asset, Base, Layout, Widget};
 
 export * from "./asset";
+export * from "./base";
+export * from "./layout";
+export * from "./table";
+export * from "./widget";
 
 export type ColorStyle =
 	| "primary"
@@ -19,3 +25,10 @@ export type ColorStyle =
 	| "pink"
 	| "purple"
 	| "blue";
+
+// table
+export type TableCol<T> = {
+	name: ReactNode;
+	parser: (v: T) => ReactNode;
+	className: string;
+};

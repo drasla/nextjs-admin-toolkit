@@ -1,0 +1,26 @@
+@layer base {
+  html {
+    --color-background-table-row: #e0f3ff;
+  }
+
+  .table {
+    border-top: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .table > thead > tr > th, .table > tbody > tr > td {
+    border-top: 1px solid var(--color-border);
+    height: 3rem;
+  }
+
+  .table > tbody > tr {
+    &:hover {
+      background-color: var(--color-background-table-row);
+    }
+  }
+
+  .table > tbody > tr {
+    border-top: 1px solid var(--color-border);
+  }
+
+}
