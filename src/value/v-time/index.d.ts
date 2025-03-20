@@ -1,4 +1,4 @@
-import { Props as BaseProps } from "../base";
+import { Props as BaseProps } from "../v-base";
 type Props = Pick<BaseProps, "className" | "align" | "copy"> & {
     children: string;
     timezone?: string;

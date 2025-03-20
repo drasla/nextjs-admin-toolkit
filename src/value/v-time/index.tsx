@@ -1,5 +1,5 @@
 import {Flat} from "../..";
-import Base, {Props as BaseProps} from "../base";
+import Base, {Props as BaseProps} from "../v-base";
 import React from "react";
 import {DateTime} from "luxon";
 

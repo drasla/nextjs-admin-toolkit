@@ -31,6 +31,11 @@ export default async function ({children}: NextLayoutProps) {
 								iconSrc: Flat.TextInputLeft,
 								href: "/value",
 							},
+							{
+								title: "Modal",
+								iconSrc: Flat.WindowRestore,
+								href: "/modal",
+							},
 						],
 					},
 				]}>

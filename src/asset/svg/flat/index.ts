@@ -9,11 +9,14 @@ import PollH from "./poll-h.svg";
 import SubscriptionAlt from "./subscription-alt.svg";
 import TableLayout from "./table-layout.svg";
 import TextInputLeft from "./text-input-left.svg";
+import WindowRestore from "./window-restore.svg";
+import Cross from "./cross.svg";
 
 export default {
 	AngleSmallDown,
 	AngleSmallUp,
 	Clock,
+	Cross,
 	IdBadge,
 	IdCardClipAlt,
 	IpAddress,
@@ -22,4 +25,5 @@ export default {
 	SubscriptionAlt,
 	TableLayout,
 	TextInputLeft,
+	WindowRestore,
 };

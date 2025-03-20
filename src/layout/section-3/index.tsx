@@ -10,10 +10,7 @@ export default function ({children, header, asideMenus, top}: Readonly<Props>) {
 	return (
 		<>
 			<Widget {...{header, asideMenus, top}} />
-			<main
-				className={fnCss.sum(`
-				lg:pl-(--width-aside) pt-(--height-nav)
-			`)}>
+			<main className={fnCss.sum("lg:pl-(--width-aside) pt-(--height-nav) min-h-screen")}>
 				<div className="p-2 lg:p-3">{children}</div>
 			</main>
 		</>

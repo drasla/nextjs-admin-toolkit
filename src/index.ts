@@ -3,10 +3,11 @@ import Base from "./base";
 import Layout from "./layout";
 import Widget from "./widget";
 import Value from "./value";
+import Modal from "./modal";
 
 import {ReactNode} from "react";
 
-export {Asset, Base, Layout, Widget, Value};
+export {Asset, Base, Layout, Widget, Value, Modal};
 
 export * from "./asset";
 export * from "./base";
@@ -14,6 +15,7 @@ export * from "./layout";
 export * from "./table";
 export * from "./widget";
 export * from "./value";
+export * from "./modal";
 
 export type ColorStyle =
 	| "primary"

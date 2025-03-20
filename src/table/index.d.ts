@@ -1,8 +1,8 @@
-import TableClick from "./click";
-import TableLink from "./link";
+import TableClick from "./table-click";
+import TableLink from "./table-link";
 export { TableClick, TableLink };
 declare const _default: {
-    Click: typeof TableClick;
-    Link: typeof TableLink;
+    TableClick: typeof TableClick;
+    TableLink: typeof TableLink;
 };
 export default _default;

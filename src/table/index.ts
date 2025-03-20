@@ -1,5 +1,5 @@
-import TableClick from "./click";
-import TableLink from "./link";
+import TableClick from "./table-click";
+import TableLink from "./table-link";
 
 export {TableClick, TableLink};
-export default {Click: TableClick, Link: TableLink};
+export default {TableClick, TableLink};
