@@ -1,4 +1,4 @@
-import {Dazzle, Flat, HTML, Section3} from "@root";
+import {Flat, HTML, Section3} from "@root";
 import {NextLayoutProps} from "nextjs-tools";
 
 export default async function ({children}: NextLayoutProps) {
@@ -18,13 +18,18 @@ export default async function ({children}: NextLayoutProps) {
 						submenus: [
 							{
 								title: "Button",
-								iconSrc: Dazzle.Host,
+								iconSrc: Flat.SubscriptionAlt,
 								href: "/button",
 							},
 							{
 								title: "Table",
-								iconSrc: Dazzle.Host,
+								iconSrc: Flat.TableLayout,
 								href: "/table",
+							},
+							{
+								title: "Value",
+								iconSrc: Flat.TextInputLeft,
+								href: "/value",
 							},
 						],
 					},

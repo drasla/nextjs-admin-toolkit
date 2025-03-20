@@ -1,0 +1,15 @@
+@layer base {
+  html {
+    --color-value: #656565;
+    --color-value-icon: #2a85ff;
+  }
+  
+  .value {
+    color: var(--color-value);
+  }
+
+  .value-copy:hover {
+    text-decoration: underline;
+    cursor: copy;
+  }
+}
