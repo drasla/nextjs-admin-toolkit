@@ -1,12 +1,21 @@
-import Action from "@comp/action";
-import Asset from "@comp/asset";
-import Button from "@comp/button";
-import Form from "@comp/form";
-import Layout from "@comp/layout";
-import Modal from "@comp/modal";
-import Pager from "@comp/pager";
-import Table from "@comp/table";
-import Unit from "@comp/unit";
+import Asset from "./asset";
+import Base from "./base";
+import Layout from "./layout";
+import Widget from "./widget";
 
-export {Action, Button, Form, Layout, Modal, Pager, Table, Unit, Asset};
-export type * from "@comp/types";
+export {Asset, Base, Layout, Widget};
+
+export * from "./asset";
+
+export type ColorStyle =
+	| "primary"
+	| "secondary"
+	| "success"
+	| "info"
+	| "warning"
+	| "danger"
+	| "light"
+	| "dark"
+	| "pink"
+	| "purple"
+	| "blue";

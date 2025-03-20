@@ -1,0 +1,64 @@
+@layer base {
+  html {
+    --color-background-body: #f1f1f1;
+    --color-background-nav: #fff;
+    --color-background-modal: rgba(0, 0, 0, 0.1);
+    --color-border: #d8d8d8;
+
+    // color by action
+    --primary: rgba(113, 182, 249); // #71B6F9
+    --primary-filter: invert(71%) sepia(36%) saturate(3649%) hue-rotate(185deg) brightness(106%) contrast(95%);
+    --primary-opposite: rgb(255 255 255); // #FFFFFF
+    --primary-opposite-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(138deg) brightness(103%) contrast(101%);
+
+    --secondary: rgb(108 117 125); // #6C757D
+    --secondary-filter: invert(43%) sepia(59%) saturate(79%) hue-rotate(167deg) brightness(91%) contrast(82%);
+    --secondary-opposite: #fff;
+    --secondary-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --success: rgb(16 196 105); // #10C469
+    --success-filter: invert(57%) sepia(41%) saturate(4236%) hue-rotate(113deg) brightness(102%) contrast(87%);
+    --success-opposite: #fff;
+    --success-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --info: rgb(53 184 224);
+    --info-filter: invert(74%) sepia(10%) saturate(7039%) hue-rotate(159deg) brightness(92%) contrast(89%);
+    --info-opposite: #fff;
+    --info-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --warning: rgb(249 200 81); // #F9C851
+    --warning-filter: invert(85%) sepia(72%) saturate(6809%) hue-rotate(316deg) brightness(102%) contrast(95%);
+    --warning-opposite: #343a40;
+    --warning-opposite-filter: invert(23%) sepia(17%) saturate(317%) hue-rotate(169deg) brightness(92%) contrast(97%);
+
+    --danger: rgb(255 91 91); // #FF5B5B
+    --danger-filter: invert(60%) sepia(73%) saturate(3419%) hue-rotate(326deg) brightness(101%) contrast(91%);
+    --danger-opposite: #fff;
+    --danger-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --light: rgb(169, 176, 176); // #A9B0B0
+    --light-filter: invert(80%) sepia(0%) saturate(7443%) hue-rotate(249deg) brightness(86%) contrast(101%);
+    --light-opposite: #2d2a2a;
+    --light-opposite-filter: invert(4%) sepia(0%) saturate(1734%) hue-rotate(182deg) brightness(97%) contrast(73%);
+
+    --dark: rgb(50 58 70); // #323A46
+    --dark-filter: invert(21%) sepia(30%) saturate(345%) hue-rotate(176deg) brightness(92%) contrast(94%);
+    --dark-opposite: #fff;
+    --dark-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --pink: rgb(255 138 204); // #FF8ACC
+    --pink-filter: invert(72%) sepia(60%) saturate(955%) hue-rotate(287deg) brightness(104%) contrast(101%);
+    --pink-opposite: #fff;
+    --pink-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --purple: rgb(91 105 188); // #5B69BC
+    --purple-filter: invert(41%) sepia(63%) saturate(484%) hue-rotate(193deg) brightness(91%) contrast(90%);
+    --purple-opposite: #fff;
+    --purple-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+
+    --blue: rgb(113 182 249); // #71B6F9
+    --blue-filter: invert(76%) sepia(49%) saturate(4508%) hue-rotate(186deg) brightness(107%) contrast(95%);
+    --blue-opposite: #fff;
+    --blue-opposite-filter: invert(99%) sepia(56%) saturate(463%) hue-rotate(184deg) brightness(113%) contrast(100%);
+  }
+}

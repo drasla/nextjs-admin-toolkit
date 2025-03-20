@@ -1,0 +1,141 @@
+@layer base {
+  html {
+    --color-h: #495057;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--color-h);
+  }
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.10rem;
+    font-weight: 500;
+  }
+
+  h5 {
+    font-size: 1.05rem;
+    font-weight: 500;
+  }
+
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  // ------------------------------------------------------------
+  // img
+  img {
+    overflow-clip-margin: padding-box;
+    overflow: hidden;
+  }
+
+  img.primary {
+    filter: var(--primary-filter);
+  }
+
+  img.opposite.primary {
+    filter: var(--primary-opposite-filter);
+  }
+
+  img.secondary {
+    filter: var(--secondary-filter);
+  }
+
+  img.opposite.secondary {
+    filter: var(--secondary-opposite-filter);
+  }
+
+  img.success {
+    filter: var(--success-filter);
+  }
+
+  img.opposite.success {
+    filter: var(--success-opposite-filter);
+  }
+
+  img.info {
+    filter: var(--info-filter);
+  }
+
+  img.opposite.info {
+    filter: var(--info-opposite-filter);
+  }
+
+  img.warning {
+    filter: var(--warning-filter);
+  }
+
+  img.opposite.warning {
+    filter: var(--warning-opposite-filter);
+  }
+
+  img.danger {
+    filter: var(--danger-filter);
+  }
+
+  img.opposite.danger {
+    filter: var(--danger-opposite-filter);
+  }
+
+  img.light {
+    filter: var(--light-filter);
+  }
+
+  img.opposite.light {
+    filter: var(--light-opposite-filter);
+  }
+
+  img.dark {
+    filter: var(--dark-filter);
+  }
+
+  img.opposite.dark {
+    filter: var(--dark-opposite-filter);
+  }
+
+  img.pink {
+    filter: var(--pink-filter);
+  }
+
+  img.opposite.pink {
+    filter: var(--pink-opposite-filter);
+  }
+
+  img.purple {
+    filter: var(--purple-filter);
+  }
+
+  img.opposite.purple {
+    filter: var(--purple-opposite-filter);
+  }
+
+  img.blue {
+    filter: var(--blue-filter);
+  }
+
+  img.opposite.blue {
+    filter: var(--blue-opposite-filter);
+  }
+}
+
