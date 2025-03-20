@@ -1,11 +1,10 @@
 @layer base {
   html {
-    --color-value: #656565;
-    --color-value-icon: #2a85ff;
+    --color-value-icon: var(--purple);
   }
-  
-  .value {
-    color: var(--color-value);
+
+  span.value {
+    color: var(--dark);
   }
 
   .value-copy:hover {

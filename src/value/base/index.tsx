@@ -41,7 +41,7 @@ export default function ({iconSrc, className, children, align, copy, ellipsis, l
 	};
 
 	return (
-		<div className={fnCss.concat("inline-flex items-center mr-3", "value", align, className)}>
+		<span className={fnCss.concat("inline-flex items-center mr-3", "value", align, className)}>
 			{iconSrc && (
 				<Image
 					className={fnCss.concat("mr-2 pb-[2px]", "primary")}
@@ -57,6 +57,6 @@ export default function ({iconSrc, className, children, align, copy, ellipsis, l
 				onClick={onCopy}>
 				{value}
 			</div>
-		</div>
+		</span>
 	);
 }
