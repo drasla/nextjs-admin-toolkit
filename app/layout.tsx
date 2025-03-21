@@ -22,6 +22,16 @@ export default async function ({children}: NextLayoutProps) {
 								href: "/button",
 							},
 							{
+								title: "Modal",
+								iconSrc: Flat.WindowRestore,
+								href: "/modal",
+							},
+							{
+								title: "Pager",
+								iconSrc: Flat.WindowRestore,
+								href: "/pager",
+							},
+							{
 								title: "Table",
 								iconSrc: Flat.TableLayout,
 								href: "/table",
@@ -30,11 +40,6 @@ export default async function ({children}: NextLayoutProps) {
 								title: "Value",
 								iconSrc: Flat.TextInputLeft,
 								href: "/value",
-							},
-							{
-								title: "Modal",
-								iconSrc: Flat.WindowRestore,
-								href: "/modal",
 							},
 						],
 					},

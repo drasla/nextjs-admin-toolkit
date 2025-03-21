@@ -4,8 +4,9 @@ import Layout from "./layout";
 import Widget from "./widget";
 import Value from "./value";
 import Modal from "./modal";
+import Pager from "./pager";
 import { ReactNode } from "react";
-export { Asset, Base, Layout, Widget, Value, Modal };
+export { Asset, Base, Layout, Widget, Value, Modal, Pager };
 export * from "./asset";
 export * from "./base";
 export * from "./layout";
@@ -13,6 +14,7 @@ export * from "./table";
 export * from "./widget";
 export * from "./value";
 export * from "./modal";
+export * from "./pager";
 export type ColorStyle = "primary" | "secondary" | "success" | "info" | "warning" | "danger" | "light" | "dark" | "pink" | "purple" | "blue";
 export type TableCol<T> = {
     name: ReactNode;

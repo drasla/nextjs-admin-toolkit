@@ -1,5 +1,6 @@
 import ApplyStyle from "./style";
 export * from "./svg";
+export { ApplyStyle };
 declare const _default: {
     Svg: {
         Dazzle: {
