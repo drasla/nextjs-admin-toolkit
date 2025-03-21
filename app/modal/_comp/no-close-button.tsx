@@ -16,6 +16,7 @@ export default function ({}: Readonly<Props>) {
 			</Button>
 
 			<ModalBase
+				disableCloseButton
 				open={open}
 				onClose={() => onOpen(false)}>
 				<h3 className="mb-3">Modal (base)</h3>
