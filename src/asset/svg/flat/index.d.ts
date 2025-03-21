@@ -7,7 +7,9 @@ declare const _default: {
     IdCardClipAlt: any;
     IpAddress: any;
     MenuBurger: any;
+    MenuDots: any;
     PollH: any;
+    RocketLaunch: any;
     SubscriptionAlt: any;
     TableLayout: any;
     TextInputLeft: any;

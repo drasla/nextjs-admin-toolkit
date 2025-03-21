@@ -1,6 +1,7 @@
 import Button from "./button";
 import Link from "./link";
-export { Button, Link };
+import Title from "./title";
+export { Button, Link, Title };
 declare const _default: {
     Button: typeof Button;
     Link: typeof Link;

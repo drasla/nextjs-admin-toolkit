@@ -11,6 +11,8 @@ import TableLayout from "./table-layout.svg";
 import TextInputLeft from "./text-input-left.svg";
 import WindowRestore from "./window-restore.svg";
 import Cross from "./cross.svg";
+import MenuDots from "./menu-dots.svg";
+import RocketLaunch from "./rocket-launch.svg";
 
 export default {
 	AngleSmallDown,
@@ -21,7 +23,9 @@ export default {
 	IdCardClipAlt,
 	IpAddress,
 	MenuBurger,
+	MenuDots,
 	PollH,
+	RocketLaunch,
 	SubscriptionAlt,
 	TableLayout,
 	TextInputLeft,

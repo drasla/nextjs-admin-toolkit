@@ -28,7 +28,7 @@ export default async function ({children}: NextLayoutProps) {
 							},
 							{
 								title: "Pager",
-								iconSrc: Flat.WindowRestore,
+								iconSrc: Flat.MenuDots,
 								href: "/pager",
 							},
 							{
@@ -40,6 +40,17 @@ export default async function ({children}: NextLayoutProps) {
 								title: "Value",
 								iconSrc: Flat.TextInputLeft,
 								href: "/value",
+							},
+						],
+					},
+					{
+						title: "Server action",
+						collapsed: true,
+						submenus: [
+							{
+								title: "action",
+								iconSrc: Flat.RocketLaunch,
+								href: "/action",
 							},
 						],
 					},

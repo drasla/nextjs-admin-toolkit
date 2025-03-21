@@ -43,6 +43,10 @@
       }
       ~~~
 
+* form 에서 server action 가기전에 client-side 에서 미리 regexp 로 validate 하는 기능 추가하기
+    * 현 (25.03.31) 시점 regexp 는 server action 에서 확인후 처리하고 있음
+    * form 자체에서 validate 하는 기능 있을 수 있을 것 같음 -> input 의 attribute 에서 require 시 알림창 나옴
+
 # style (*.scss)
 
 * 너무 많은 스타일시트의 추가를 방지하기 위해서 다음과 같은 규칙을 지킨다.
