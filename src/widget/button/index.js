@@ -1,0 +1,14 @@
+"use client";
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { fnCss } from "nextjs-tools";
+import Image from "next/image";
+export default function ({ type, children, iconSrc, buttonColor, buttonStyle, buttonCorner, buttonAlign, buttonSize, className, disabled, onClick, }) {
+    buttonColor = buttonColor || "primary";
+    buttonStyle = buttonStyle || "filled";
+    buttonCorner = buttonCorner || "square";
+    buttonAlign = buttonAlign || "text-center";
+    buttonSize = buttonSize || "md";
+    className = className || "";
+    return (_jsx("button", { type: type, disabled: disabled, onClick: onClick, className: fnCss.sum("button", buttonStyle, buttonColor, buttonCorner, buttonSize, className, disabled ? "disabled" : ""), children: _jsxs("div", { className: "flex items-baseline", children: [iconSrc && (_jsx(Image, { className: fnCss.sum(buttonStyle === "filled" ? "opposite" : "", buttonColor, "mr-3"), width: 20, height: 20, src: iconSrc, alt: "button" })), _jsx("div", { className: fnCss.sum("grow", buttonAlign, buttonColor), children: children })] }) }));
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsWUFBWSxDQUFDOztBQUdiLE9BQU8sRUFBQyxLQUFLLEVBQUMsTUFBTSxjQUFjLENBQUM7QUFDbkMsT0FBTyxLQUFLLE1BQU0sWUFBWSxDQUFDO0FBb0IvQixNQUFNLENBQUMsT0FBTyxXQUFXLEVBQ3hCLElBQUksRUFDSixRQUFRLEVBQ1IsT0FBTyxFQUNQLFdBQVcsRUFDWCxXQUFXLEVBQ1gsWUFBWSxFQUNaLFdBQVcsRUFDWCxVQUFVLEVBQ1YsU0FBUyxFQUNULFFBQVEsRUFDUixPQUFPLEdBQ2lDO0lBQ3hDLFdBQVcsR0FBRyxXQUFXLElBQUksU0FBUyxDQUFDO0lBQ3ZDLFdBQVcsR0FBRyxXQUFXLElBQUksUUFBUSxDQUFDO0lBQ3RDLFlBQVksR0FBRyxZQUFZLElBQUksUUFBUSxDQUFDO0lBQ3hDLFdBQVcsR0FBRyxXQUFXLElBQUksYUFBYSxDQUFDO0lBQzNDLFVBQVUsR0FBRyxVQUFVLElBQUksSUFBSSxDQUFDO0lBQ2hDLFNBQVMsR0FBRyxTQUFTLElBQUksRUFBRSxDQUFDO0lBRTVCLE9BQU8sQ0FDTixpQkFDQyxJQUFJLEVBQUUsSUFBSSxFQUNWLFFBQVEsRUFBRSxRQUFRLEVBQ2xCLE9BQU8sRUFBRSxPQUFPLEVBQ2hCLFNBQVMsRUFBRSxLQUFLLENBQUMsR0FBRyxDQUNuQixRQUFRLEVBQ1IsV0FBVyxFQUNYLFdBQVcsRUFDWCxZQUFZLEVBQ1osVUFBVSxFQUNWLFNBQVMsRUFDVCxRQUFRLENBQUMsQ0FBQyxDQUFDLFVBQVUsQ0FBQyxDQUFDLENBQUMsRUFBRSxDQUMxQixZQUdELGVBQUssU0FBUyxFQUFDLHFCQUFxQixhQUNsQyxPQUFPLElBQUksQ0FDWCxLQUFDLEtBQUssSUFDTCxTQUFTLEVBQUUsS0FBSyxDQUFDLEdBQUcsQ0FBQyxXQUFXLEtBQUssUUFBUSxDQUFDLENBQUMsQ0FBQyxVQUFVLENBQUMsQ0FBQyxDQUFDLEVBQUUsRUFBRSxXQUFXLEVBQUUsTUFBTSxDQUFDLEVBQ3JGLEtBQUssRUFBRSxFQUFFLEVBQ1QsTUFBTSxFQUFFLEVBQUUsRUFDVixHQUFHLEVBQUUsT0FBTyxFQUNaLEdBQUcsRUFBQyxRQUFRLEdBQ1gsQ0FDRixFQUNELGNBQUssU0FBUyxFQUFFLEtBQUssQ0FBQyxHQUFHLENBQUMsTUFBTSxFQUFFLFdBQVcsRUFBRSxXQUFXLENBQUMsWUFBRyxRQUFRLEdBQU8sSUFDeEUsR0FDRSxDQUNULENBQUM7QUFDSCxDQUFDIn0=

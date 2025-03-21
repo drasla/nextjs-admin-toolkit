@@ -1,0 +1,14 @@
+@layer base {
+  html {
+    --color-value-icon: var(--purple);
+  }
+
+  span.value {
+    color: var(--dark);
+  }
+
+  .value-copy:hover {
+    text-decoration: underline;
+    cursor: copy;
+  }
+}

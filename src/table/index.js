@@ -1,0 +1,5 @@
+import TableClick from "./table-click";
+import TableLink from "./table-link";
+export { TableClick, TableLink };
+export default { TableClick, TableLink };
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyJpbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLFVBQVUsTUFBTSxlQUFlLENBQUM7QUFDdkMsT0FBTyxTQUFTLE1BQU0sY0FBYyxDQUFDO0FBRXJDLE9BQU8sRUFBQyxVQUFVLEVBQUUsU0FBUyxFQUFDLENBQUM7QUFDL0IsZUFBZSxFQUFDLFVBQVUsRUFBRSxTQUFTLEVBQUMsQ0FBQyJ9

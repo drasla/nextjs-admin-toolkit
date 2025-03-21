@@ -1,5 +1,0 @@
-import Click from "../table/click";
-import Link from "../table/link";
-import List from "../table/list";
-export default { Link, Click, List };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvY29tcC90YWJsZS9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLEtBQUssTUFBTSxtQkFBbUIsQ0FBQztBQUN0QyxPQUFPLElBQUksTUFBTSxrQkFBa0IsQ0FBQztBQUNwQyxPQUFPLElBQUksTUFBTSxrQkFBa0IsQ0FBQztBQUVwQyxlQUFlLEVBQUMsSUFBSSxFQUFFLEtBQUssRUFBRSxJQUFJLEVBQUMsQ0FBQyJ9

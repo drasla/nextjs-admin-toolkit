@@ -25,28 +25,10 @@
     ],
     "paths": {
       "@app/*": [
-        "./src/app/*"
+        "./app/*"
       ],
-      "@src": [
+      "@root": [
         "./src"
-      ],
-      "@comp/*": [
-        "./src/comp/*"
-      ],
-      "@asset/*": [
-        "./asset/*"
-      ],
-      "@asset": [
-        "./asset"
-      ],
-      "@scss": [
-        "./asset/scss/index.scss"
-      ],
-      "@scss/*": [
-        "./asset/scss/*"
-      ],
-      "@dist/*": [
-        "./dist/*"
       ]
     }
   },

@@ -1,4 +1,0 @@
-import Backdrop from "../modal/backdrop";
-import Simple from "../modal/simple";
-export default { Backdrop, Simple };
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi9zcmMvY29tcC9tb2RhbC9pbmRleC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxPQUFPLFFBQVEsTUFBTSxzQkFBc0IsQ0FBQztBQUM1QyxPQUFPLE1BQU0sTUFBTSxvQkFBb0IsQ0FBQztBQUV4QyxlQUFlLEVBQUMsUUFBUSxFQUFFLE1BQU0sRUFBQyxDQUFDIn0=

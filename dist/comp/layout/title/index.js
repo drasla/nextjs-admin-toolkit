@@ -1,6 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import { fnCss } from "nextjs-tools";
-export default function ({ children, right, className }) {
-    return (_jsxs("div", { className: fnCss.concat("flex w-full items-center mb-5 min-h-13", className), children: [_jsx("h4", { className: "block", children: children }), _jsx("div", { className: "grow flex justify-end", children: right })] }));
-}
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi8uLi8uLi8uLi9zcmMvY29tcC9sYXlvdXQvdGl0bGUvaW5kZXgudHN4Il0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxPQUFPLEVBQUMsS0FBSyxFQUFDLE1BQU0sY0FBYyxDQUFDO0FBU25DLE1BQU0sQ0FBQyxPQUFPLFdBQVcsRUFBQyxRQUFRLEVBQUUsS0FBSyxFQUFFLFNBQVMsRUFBUTtJQUMzRCxPQUFPLENBQ04sZUFBSyxTQUFTLEVBQUUsS0FBSyxDQUFDLE1BQU0sQ0FBQyx3Q0FBd0MsRUFBRSxTQUFTLENBQUMsYUFDaEYsYUFBSSxTQUFTLEVBQUMsT0FBTyxZQUFFLFFBQVEsR0FBTSxFQUNyQyxjQUFLLFNBQVMsRUFBQyx1QkFBdUIsWUFBRSxLQUFLLEdBQU8sSUFDL0MsQ0FDTixDQUFDO0FBQ0gsQ0FBQyJ9
