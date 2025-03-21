@@ -1,7 +1,7 @@
 "use client";
-import React from "react";
+import {ActErrors, ActLoading, ActResponseModal, Button, InputField, InputString, Panel, Title, VId} from "@root";
 import {fnAction, NextPageProps} from "nextjs-tools";
-import {ActErrors, ActLoading, ActResponseModal, Button, InputString, Panel, Title} from "@root";
+import React from "react";
 import form from "./form";
 import serverAction from "./server-action";
 
@@ -14,6 +14,9 @@ export default function ({}: NextPageProps) {
 			<form
 				action={action}
 				className={"grid grid-cols-1 gap-4"}>
+				<InputField label="필드">
+					<VId>abcd</VId>
+				</InputField>
 				<InputString
 					{...form.username}
 					label="아이디"
