@@ -6,4 +6,4 @@ import VTime from "./v-time";
 
 export {VBase, VId, VIp, VName, VTime};
 
-export default {VBase, VId, VIp, VTime, VName};
+export default {Base: VBase, Id: VId, Ip: VIp, Time: VTime, Name: VName};

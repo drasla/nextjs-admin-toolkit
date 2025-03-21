@@ -5,10 +5,10 @@ import VName from "./v-name";
 import VTime from "./v-time";
 export { VBase, VId, VIp, VName, VTime };
 declare const _default: {
-    VBase: typeof VBase;
-    VId: typeof VId;
-    VIp: typeof VIp;
-    VTime: typeof VTime;
-    VName: typeof VName;
+    Base: typeof VBase;
+    Id: typeof VId;
+    Ip: typeof VIp;
+    Time: typeof VTime;
+    Name: typeof VName;
 };
 export default _default;

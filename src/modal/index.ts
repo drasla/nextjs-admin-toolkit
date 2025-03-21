@@ -3,4 +3,4 @@ import ModalBase from "./modal-base";
 
 export {ModalBackdrop, ModalBase};
 
-export default {ModalBackdrop, ModalBase};
+export default {Backdrop: ModalBackdrop, Base: ModalBase};
