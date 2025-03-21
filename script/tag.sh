@@ -13,8 +13,5 @@ git push -d latest
 
 git tag "$TAG"
 git push --tags "$ORIGIN" "$TAG"
-git tag latest
-git push --tags latest
-
 
 echo "⭕ upload tag done"
