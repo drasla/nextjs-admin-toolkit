@@ -1,5 +1,16 @@
 "use client";
-import {ActErrors, ActLoading, ActResponseModal, Button, InputField, InputString, Panel, Title, VId} from "@root";
+import {
+	ActErrors,
+	ActLoading,
+	ActResponseModal,
+	Button,
+	FormAskConfirm,
+	InputField,
+	InputString,
+	Panel,
+	Title,
+	VId,
+} from "@root";
 import {fnAction, NextPageProps} from "nextjs-tools";
 import React from "react";
 import form from "./form";
@@ -11,11 +22,33 @@ export default function ({}: NextPageProps) {
 	return (
 		<Panel>
 			<Title>Action</Title>
-			<form
+			<FormAskConfirm
+				disableBackdrop
+				disableCloseButton
 				action={action}
-				className={"grid grid-cols-1 gap-4"}>
+				className={"grid grid-cols-1 gap-4"}
+				ask={({confirm, cancel}) => (
+					<div>
+						<h4>확인 모달</h4>
+						<div className="grid grid-cols-2 gap-2">
+							<Button onClick={confirm}>확인</Button>
+							<Button
+								buttonStyle="outlined"
+								onClick={cancel}>
+								취소
+							</Button>
+						</div>
+					</div>
+				)}
+				button={({open}) => (
+					<Button
+						type="button"
+						onClick={() => open()}>
+						확인
+					</Button>
+				)}>
 				<InputField label="필드">
-					<VId>abcd</VId>
+					<VId>12354ABCD</VId>
 				</InputField>
 				<InputString
 					{...form.username}
@@ -30,8 +63,7 @@ export default function ({}: NextPageProps) {
 					defaultValue={password}
 					required
 				/>
-				<Button type="submit">확인</Button>
-			</form>
+			</FormAskConfirm>
 
 			<ActLoading pending={pending} />
 			<ActErrors state={state} />
