@@ -1,6 +1,6 @@
 import "./success.scss";
 import {CSSProperties} from "react";
-import {Flat} from "@root";
+import {ColorStyle, Flat} from "@root";
 import Image from "next/image";
 import {fnCss} from "nextjs-tools";
 
@@ -9,16 +9,17 @@ type Props = {
 	width?: number;
 	height?: number;
 	stroke?: number;
-	color?: string;
+	color?: ColorStyle | string;
 	loop?: boolean;
 };
 
-export default function ({className, width = 120, height = 120, stroke = 6, color = "#15D773", loop = true}: Props) {
+export default function ({className, width = 120, height = 120, stroke = 6, color = "success", loop = true}: Props) {
 	const cx = width / 2;
 	const cy = height / 2;
 	const r = Math.min(width, height) / 2 - 10;
 
 	const animationCssWrapper = loop ? "draw-svg loop" : "draw-svg";
+	const computedColor = getColor(color);
 
 	return (
 		<div className={fnCss.concat(animationCssWrapper, className)}>
@@ -33,7 +34,7 @@ export default function ({className, width = 120, height = 120, stroke = 6, colo
 					cx={cx}
 					cy={cy}
 					r={r}
-					fill={color}
+					fill={computedColor}
 					strokeWidth="none"
 				/>
 				<circle
@@ -41,7 +42,7 @@ export default function ({className, width = 120, height = 120, stroke = 6, colo
 					cx={cx}
 					cy={cy}
 					r={r}
-					fill={color}
+					fill={computedColor}
 					strokeWidth="none"
 				/>
 				<circle
@@ -50,7 +51,7 @@ export default function ({className, width = 120, height = 120, stroke = 6, colo
 					cy={cy}
 					r={r}
 					fill="none"
-					stroke={color}
+					stroke={computedColor}
 					strokeWidth={stroke}
 				/>
 				<foreignObject
@@ -72,3 +73,26 @@ export default function ({className, width = 120, height = 120, stroke = 6, colo
 		</div>
 	);
 }
+
+const validColorStyle: ColorStyle[] = [
+	"primary",
+	"secondary",
+	"primary",
+	"secondary",
+	"success",
+	"info",
+	"warning",
+	"danger",
+	"light",
+	"dark",
+	"pink",
+	"purple",
+	"blue",
+];
+
+const getColor = (color: ColorStyle | string): string => {
+	if (validColorStyle.includes(color as ColorStyle)) {
+		return `var(--${color})`;
+	}
+	return color;
+};
