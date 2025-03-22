@@ -1,6 +1,6 @@
-import React, {ReactNode} from "react";
 import {Viewport} from "next";
-import {Asset} from "@root";
+import React, {ReactNode} from "react";
+import {ApplyStyle} from "../..";
 
 interface Props {
 	lang?: string;
@@ -14,10 +14,10 @@ export const viewport: Viewport = {
 
 export default function ({children, lang}: Readonly<Props>) {
 	return (
-		<Asset.ApplyStyle>
+		<ApplyStyle>
 			<html lang={lang || "en"}>
 				<body className="text-12 lg:text-16 bg-(--color-background-body)">{children}</body>
 			</html>
-		</Asset.ApplyStyle>
+		</ApplyStyle>
 	);
 }

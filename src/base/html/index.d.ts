@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
 import { Viewport } from "next";
+import { ReactNode } from "react";
 interface Props {
     lang?: string;
     children?: ReactNode;
