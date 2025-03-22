@@ -15,12 +15,18 @@ const list: {name: string; age: number; height: number}[] = [
 const cols: TableCol<ArrayElement<typeof list>>[] = [
 	{
 		name: "이름",
-		widthClassName: "w-1/4",
-		className: "text-center",
+		colClassName: "w-1/2 lg:w-1/4",
+		cellClassName: "text-center",
 		parser: (v) => <VBase align={"justify-center"}>{v.name}</VBase>,
 	},
-	{name: "나이", widthClassName: "w-1/4", className: "text-right", parser: (v) => <VIp>{v.age}</VIp>},
-	{name: "키", widthClassName: "w-2/4", className: "text-center", parser: (v) => <>{v.height}</>},
+	{name: "나이", colClassName: "w-1/2 lg:w-1/4", cellClassName: "text-right", parser: (v) => <VIp>{v.age}</VIp>},
+	{
+		name: "키",
+		colClassName: "w-0 lg:w-2/4",
+		headerClassName: "hidden lg:table-cell",
+		cellClassName: "hidden lg:table-cell",
+		parser: (v) => <>{v.height}</>,
+	},
 ];
 
 export default async function ({}: NextPageProps) {

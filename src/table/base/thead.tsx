@@ -10,7 +10,11 @@ export default function <T>({cols}: Props<T>) {
 		<thead>
 			<tr className="border-top">
 				{cols.map((v, key) => (
-					<th key={key}>{v.name}</th>
+					<th
+						className={v.headerClassName}
+						key={key}>
+						{v.name}
+					</th>
 				))}
 			</tr>
 		</thead>

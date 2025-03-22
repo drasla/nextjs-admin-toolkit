@@ -10,7 +10,7 @@ export default function <T>({cols}: Readonly<Props<T>>) {
 		<colgroup>
 			{cols.map((col, key) => (
 				<col
-					className={col.widthClassName}
+					className={col.colClassName}
 					key={key}></col>
 			))}
 		</colgroup>

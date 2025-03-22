@@ -10,7 +10,7 @@ export default function <T>({cols, value}: Readonly<Props<T>>) {
 	return cols.map((v, key) => (
 		<td
 			key={key}
-			className={v.className}>
+			className={v.cellClassName}>
 			{v.parser(value)}
 		</td>
 	));
