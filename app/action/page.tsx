@@ -57,8 +57,9 @@ export default function ({}: NextPageProps) {
 							{...form.password}
 							label="비밀번호"
 							defaultValue={password}
-							required
-						/>
+							required>
+							<Button buttonStyle="outlined">찾기</Button>
+						</InputString>
 						<Button
 							type="button"
 							onClick={() => open()}>

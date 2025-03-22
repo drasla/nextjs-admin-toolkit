@@ -23,25 +23,18 @@ export type ButtonSize = "sm" | "md" | "lg";
 export type ButtonType = "submit" | "reset" | "button";
 
 export default function ({
-	type,
+	type = "button",
 	children,
 	iconSrc,
-	buttonColor,
-	buttonStyle,
-	buttonCorner,
-	buttonAlign,
-	buttonSize,
-	className,
+	buttonColor = "primary",
+	buttonStyle = "filled",
+	buttonCorner = "square",
+	buttonAlign = "text-center",
+	buttonSize = "md",
+	className = "",
 	disabled,
 	onClick,
 }: Readonly<Props & {disabled?: boolean}>) {
-	buttonColor = buttonColor || "primary";
-	buttonStyle = buttonStyle || "filled";
-	buttonCorner = buttonCorner || "square";
-	buttonAlign = buttonAlign || "text-center";
-	buttonSize = buttonSize || "md";
-	className = className || "";
-
 	return (
 		<button
 			type={type}
