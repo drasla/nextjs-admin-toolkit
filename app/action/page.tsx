@@ -26,6 +26,7 @@ export default function ({}: NextPageProps) {
 				disableBackdrop
 				disableCloseButton
 				action={action}
+				pending={pending}
 				className={"grid grid-cols-1 gap-4"}
 				ask={({confirm, cancel}) => (
 					<div>
@@ -39,30 +40,32 @@ export default function ({}: NextPageProps) {
 							</Button>
 						</div>
 					</div>
-				)}
-				button={({open}) => (
-					<Button
-						type="button"
-						onClick={() => open()}>
-						확인
-					</Button>
 				)}>
-				<InputField label="필드">
-					<VId>12354ABCD</VId>
-				</InputField>
-				<InputString
-					{...form.username}
-					label="아이디"
-					defaultValue={username}
-					required
-				/>
+				{({open}) => (
+					<>
+						<InputField label="필드">
+							<VId>12354ABCD</VId>
+						</InputField>
+						<InputString
+							{...form.username}
+							label="아이디"
+							defaultValue={username}
+							required
+						/>
 
-				<InputString
-					{...form.password}
-					label="비밀번호"
-					defaultValue={password}
-					required
-				/>
+						<InputString
+							{...form.password}
+							label="비밀번호"
+							defaultValue={password}
+							required
+						/>
+						<Button
+							type="button"
+							onClick={() => open()}>
+							확인
+						</Button>
+					</>
+				)}
 			</FormAskConfirm>
 
 			<ActLoading pending={pending} />

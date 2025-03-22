@@ -1,17 +1,19 @@
 "use client";
 import {Nullable} from "nextjs-tools";
 import React, {ReactNode, useState} from "react";
-import {ModalBase} from "../..";
+import {ActLoading, ModalBase} from "../..";
 
 interface Props {
 	action: (payload: FormData) => void;
+	pending: boolean;
 	className?: string;
-	children: ReactNode;
-	button: (props: ConfirmButtonProps) => ReactNode;
+	children: (props: ConfirmButtonProps) => ReactNode;
+	loadingChildren?: ReactNode;
 	ask: (props: ConfirmCancelProps) => ReactNode;
 	disableBackdrop?: boolean;
 	disableEscapeKey?: boolean;
 	disableCloseButton?: boolean;
+	disableLoadingView?: boolean;
 }
 
 interface ConfirmCancelProps {
@@ -27,12 +29,14 @@ interface ConfirmButtonProps {
 export default function ({
 	className,
 	children,
+	loadingChildren,
+	pending,
 	action,
-	button,
 	ask,
 	disableEscapeKey,
 	disableBackdrop,
 	disableCloseButton,
+	disableLoadingView,
 }: Readonly<Props>) {
 	const [form, setForm] = useState<Nullable<HTMLFormElement>>();
 	const [open, setOpen] = useState(false);
@@ -53,8 +57,7 @@ export default function ({
 				ref={setForm}
 				className={className}
 				action={action}>
-				{children}
-				{button({
+				{children({
 					open: () => {
 						if (form?.reportValidity()) setOpen(true);
 					},
@@ -72,6 +75,8 @@ export default function ({
 					{ask(props)}
 				</ModalBase>
 			)}
+
+			{!disableLoadingView && <ActLoading pending={pending}>{loadingChildren}</ActLoading>}
 		</>
 	);
 }
