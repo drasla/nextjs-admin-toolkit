@@ -1,11 +1,11 @@
 import {Title} from "@root";
-import Animation from "../../src/asset/animation";
+import Comp from "./_comp";
 
 export default function () {
 	return (
 		<>
 			<Title>Success Animation</Title>
-			<Animation.Success />
+			<Comp.Success />
 		</>
 	);
 }

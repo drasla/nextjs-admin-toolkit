@@ -2,8 +2,10 @@ import "./success.scss";
 import {CSSProperties} from "react";
 import {Flat} from "@root";
 import Image from "next/image";
+import {fnCss} from "nextjs-tools";
 
 type Props = {
+	className?: string;
 	width?: number;
 	height?: number;
 	stroke?: number;
@@ -11,7 +13,7 @@ type Props = {
 	loop?: boolean;
 };
 
-export default function ({width = 120, height = 120, stroke = 6, color = "#15D773", loop = true}: Props) {
+export default function ({className, width = 120, height = 120, stroke = 6, color = "#15D773", loop = true}: Props) {
 	const cx = width / 2;
 	const cy = height / 2;
 	const r = Math.min(width, height) / 2 - 10;
@@ -19,7 +21,7 @@ export default function ({width = 120, height = 120, stroke = 6, color = "#15D77
 	const animationCssWrapper = loop ? "draw-svg loop" : "draw-svg";
 
 	return (
-		<div className={animationCssWrapper}>
+		<div className={fnCss.concat(animationCssWrapper, className)}>
 			<svg
 				className={"draw-svg"}
 				width={width}
