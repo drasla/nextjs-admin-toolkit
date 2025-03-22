@@ -1,10 +1,11 @@
-import { ReactNode } from "react";
 import { State } from "nextjs-tools";
+import { ReactNode } from "react";
 interface Props<T> {
-    children?: (props: {
-        onClose: () => void;
-    }) => ReactNode;
+    children?: (props: ChildrenProps) => ReactNode;
     state?: State<unknown, ActionStateDone<T>>;
+}
+interface ChildrenProps {
+    close: () => void;
 }
 export type ActionStateDone<T> = {
     time: number;

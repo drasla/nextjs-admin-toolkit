@@ -7,7 +7,7 @@ interface Props {
 	action: (payload: FormData) => void;
 	pending: boolean;
 	className?: string;
-	children: (props: ConfirmButtonProps) => ReactNode;
+	children: (props: ChildrenProps) => ReactNode;
 	loadingChildren?: ReactNode;
 	ask: (props: ConfirmCancelProps) => ReactNode;
 	disableBackdrop?: boolean;
@@ -21,7 +21,7 @@ interface ConfirmCancelProps {
 	cancel: () => void;
 }
 
-interface ConfirmButtonProps {
+interface ChildrenProps {
 	open: () => void;
 	close: () => void;
 }
@@ -41,7 +41,7 @@ export default function ({
 	const [form, setForm] = useState<Nullable<HTMLFormElement>>();
 	const [open, setOpen] = useState(false);
 
-	const props: ConfirmCancelProps = {
+	const askProps: ConfirmCancelProps = {
 		confirm: () => {
 			form?.requestSubmit();
 			setOpen(false);
@@ -51,18 +51,20 @@ export default function ({
 		},
 	};
 
+	const childrenProps: ChildrenProps = {
+		open: () => {
+			if (form?.reportValidity()) setOpen(true);
+		},
+		close: () => setOpen(false),
+	};
+
 	return (
 		<>
 			<form
 				ref={setForm}
 				className={className}
 				action={action}>
-				{children({
-					open: () => {
-						if (form?.reportValidity()) setOpen(true);
-					},
-					close: () => setOpen(false),
-				})}
+				{children(childrenProps)}
 			</form>
 
 			{form && (
@@ -72,7 +74,7 @@ export default function ({
 					disableBackdrop={disableBackdrop}
 					open={open}
 					onClose={() => setOpen(false)}>
-					{ask(props)}
+					{ask(askProps)}
 				</ModalBase>
 			)}
 

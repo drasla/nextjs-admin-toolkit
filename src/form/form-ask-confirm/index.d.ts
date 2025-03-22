@@ -3,7 +3,7 @@ interface Props {
     action: (payload: FormData) => void;
     pending: boolean;
     className?: string;
-    children: (props: ConfirmButtonProps) => ReactNode;
+    children: (props: ChildrenProps) => ReactNode;
     loadingChildren?: ReactNode;
     ask: (props: ConfirmCancelProps) => ReactNode;
     disableBackdrop?: boolean;
@@ -15,7 +15,7 @@ interface ConfirmCancelProps {
     confirm: () => void;
     cancel: () => void;
 }
-interface ConfirmButtonProps {
+interface ChildrenProps {
     open: () => void;
     close: () => void;
 }

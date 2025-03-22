@@ -1,11 +1,15 @@
 "use client";
-import React, {ReactNode, useEffect, useState} from "react";
 import {State} from "nextjs-tools";
+import React, {ReactNode, useEffect, useState} from "react";
 import {ModalBase} from "../..";
 
 interface Props<T> {
-	children?: (props: {onClose: () => void}) => ReactNode;
+	children?: (props: ChildrenProps) => ReactNode;
 	state?: State<unknown, ActionStateDone<T>>;
+}
+
+interface ChildrenProps {
+	close: () => void;
 }
 
 export type ActionStateDone<T> = {
@@ -29,13 +33,17 @@ export default function <T>({state, children}: Readonly<Props<T>>) {
 	if (!state.response) return null;
 	if (!children) return null;
 
+	const childrenProps: ChildrenProps = {
+		close: () => setOpen(false),
+	};
+
 	return (
 		<ModalBase
 			disableBackdrop
 			disableCloseButton
 			open={open}
 			onClose={() => setOpen(false)}>
-			{children({onClose: () => setOpen(false)})}
+			{children(childrenProps)}
 		</ModalBase>
 	);
 }

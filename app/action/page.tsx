@@ -71,12 +71,12 @@ export default function ({}: NextPageProps) {
 			<ActLoading pending={pending} />
 			<ActErrors state={state} />
 			<ActResponseModal state={state}>
-				{({onClose}) => (
+				{({close}) => (
 					<div className="min-w-[200px]">
 						<h4 className="mb-5">응답 모달</h4>
 						<Button
 							className="w-full"
-							onClick={onClose}>
+							onClick={close}>
 							닫기
 						</Button>
 					</div>
