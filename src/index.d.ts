@@ -24,5 +24,6 @@ export type ColorStyle = "primary" | "secondary" | "success" | "info" | "warning
 export type TableCol<T> = {
     name: ReactNode;
     parser: (v: T) => ReactNode;
-    className: string;
+    className?: string;
+    widthClassName: string;
 };

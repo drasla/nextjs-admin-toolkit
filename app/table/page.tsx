@@ -1,7 +1,7 @@
 "use server";
+import {Panel, TableCol, TableLink, TableList, VBase, VIp} from "@root";
+import {ArrayElement, NextPageProps} from "nextjs-tools";
 import React from "react";
-import {NextPageProps} from "nextjs-tools";
-import {Panel, TableLink} from "@root";
 import ClientList from "./_comp";
 
 const list: {name: string; age: number; height: number}[] = [
@@ -12,6 +12,17 @@ const list: {name: string; age: number; height: number}[] = [
 	{name: "e", age: 50, height: 180},
 ];
 
+const cols: TableCol<ArrayElement<typeof list>>[] = [
+	{
+		name: "이름",
+		widthClassName: "w-1/4",
+		className: "text-center",
+		parser: (v) => <VBase align={"justify-center"}>{v.name}</VBase>,
+	},
+	{name: "나이", widthClassName: "w-1/4", className: "text-right", parser: (v) => <VIp>{v.age}</VIp>},
+	{name: "키", widthClassName: "w-2/4", className: "text-center", parser: (v) => <>{v.height}</>},
+];
+
 export default async function ({}: NextPageProps) {
 	return (
 		<Panel>
@@ -19,11 +30,7 @@ export default async function ({}: NextPageProps) {
 			<TableLink
 				className="w-full mb-10"
 				list={list}
-				cols={[
-					{name: "이름", className: "w-1/4", parser: (v) => <>{v.name}</>},
-					{name: "나이", className: "w-1/4", parser: (v) => <>{v.age}</>},
-					{name: "키", className: "w-2/4", parser: (v) => <>{v.height}</>},
-				]}
+				cols={cols}
 				linker={(v) => "/table"}
 			/>
 
@@ -31,16 +38,19 @@ export default async function ({}: NextPageProps) {
 			<TableLink
 				className="w-full mb-10"
 				list={[]}
-				cols={[
-					{name: "이름", className: "w-1/4", parser: (v) => <></>},
-					{name: "나이", className: "w-1/4", parser: (v) => <></>},
-					{name: "키", className: "w-2/4", parser: (v) => <></>},
-				]}
+				cols={cols}
 				linker={(v) => "/table"}
 			/>
 
-			<h4>Client component: onClick</h4>
+			<h4>Click</h4>
 			<ClientList list={list} />
+
+			<h4 className="mt-10">List</h4>
+			<TableList
+				className="w-full mb-10"
+				list={list}
+				cols={cols}
+			/>
 		</Panel>
 	);
 }

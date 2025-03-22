@@ -40,5 +40,6 @@ export type ColorStyle =
 export type TableCol<T> = {
 	name: ReactNode;
 	parser: (v: T) => ReactNode;
-	className: string;
+	className?: string;
+	widthClassName: string;
 };
