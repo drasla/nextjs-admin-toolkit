@@ -1,5 +1,5 @@
 import { MouseEventHandler, ReactNode } from "react";
-import { ColorStyle } from "@root";
+import { ColorStyle } from "../../..";
 export interface Props {
     children?: ReactNode;
     className?: string;

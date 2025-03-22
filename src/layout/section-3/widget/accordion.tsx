@@ -1,8 +1,8 @@
-import React, {ReactNode, useState} from "react";
-import Link from "next/link";
 import Image from "next/image";
-import {Flat} from "@root";
+import Link from "next/link";
 import {usePathname} from "next/navigation";
+import React, {ReactNode, useState} from "react";
+import {Flat} from "../../..";
 
 type AsideMenu = Pick<MenuProps, "title" | "collapsed"> & {submenus: SubmenuProps[]};
 

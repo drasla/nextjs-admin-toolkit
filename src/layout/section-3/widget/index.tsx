@@ -1,10 +1,10 @@
 "use client";
+import Image from "next/image";
+import {fnCss} from "nextjs-tools";
 import React, {ReactNode, useState} from "react";
+import {Flat} from "../../..";
 import Accordion, {Props as AccordionProps} from "./accordion";
 import Aside from "./aside";
-import Image from "next/image";
-import {Flat} from "@root";
-import {fnCss} from "nextjs-tools";
 
 export interface Props extends AccordionProps {
 	top?: ReactNode;
