@@ -8,15 +8,18 @@ type Props = {
 	height?: number;
 	stroke?: number;
 	color?: string;
+	loop?: boolean;
 };
 
-export default function ({width = 120, height = 120, stroke = 6, color = "#15D773"}: Props) {
+export default function ({width = 120, height = 120, stroke = 6, color = "#15D773", loop = true}: Props) {
 	const cx = width / 2;
 	const cy = height / 2;
 	const r = Math.min(width, height) / 2 - 10;
 
+	const animationCssWrapper = loop ? "draw-svg loop" : "draw-svg";
+
 	return (
-		<div className={"draw-svg"}>
+		<div className={animationCssWrapper}>
 			<svg
 				className={"draw-svg"}
 				width={width}

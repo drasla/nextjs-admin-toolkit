@@ -1,19 +1,30 @@
 .draw-svg {
   overflow: visible;
+
+  &.loop {
+    .draw-circle, .inner-circle, .outer-circle, .check-svg {
+      animation-iteration-count: infinite;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 
 .draw-circle {
   fill: transparent;
   stroke-dasharray: 314; /* 원의 둘레 (2π × 50 ≒ 314) */
   stroke-dashoffset: 314;
-  animation: drawCircle .5s forwards;
+  animation: drawCircle 2s forwards;
 }
 
 @keyframes drawCircle {
-  from {
+  0% {
     stroke-dashoffset: 314;
   }
-  to {
+  25% {
+    stroke-dashoffset: 0;
+  }
+  100% {
     stroke-dashoffset: 0;
   }
 }
@@ -21,15 +32,21 @@
 .inner-circle {
   transform: scale(0);
   transform-origin: 60px 60px;
-  animation: fillCircle .5s forwards .5s;
+  animation: fillCircle 2s forwards;
 }
 
 @keyframes fillCircle {
   0% {
     transform: scale(0);
   }
-  80% {
+  25% {
+    transform: scale(0);
+  }
+  40% {
     transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
   }
   100% {
     transform: scale(1);
@@ -40,13 +57,26 @@
   opacity: 0;
   transform: scale(1);
   transform-origin: 60px 60px;
-  animation: opacityCircle 1s forwards 1s;
+  animation: opacityCircle 2s forwards;
 }
 
 @keyframes opacityCircle {
   0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+
+  49.99% {
+    opacity: 0;
+  }
+
+  50% {
     opacity: 1;
     transform: scale(1);
+  }
+  75% {
+    opacity: 0;
+    transform: scale(1.4);
   }
 
   100% {
@@ -66,7 +96,7 @@
   opacity: 0;
   color: #FFFFFF;
   clip-path: inset(0 100% 0 0);
-  animation: showImage .5s forwards 1s;
+  animation: showImage 2s forwards;
 }
 
 .check-svg img {
@@ -77,10 +107,17 @@
 }
 
 @keyframes showImage {
-  from {
-    opacity: 1;
+  0% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
   }
-  to {
+
+  50% {
+    opacity: 0;
+    clip-path: inset(0 100% 0 0);
+  }
+
+  100% {
     clip-path: inset(0 0 0 0);
     opacity: 1;
   }
